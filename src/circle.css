@@ -1,0 +1,11 @@
+.circle{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 10.527vw;
+    border-radius: 50;
+    -webkit-border-radius: 64%;
+    border: 2px solid #c09f7c;
+    text-align: center;
+    color: #cc9964;
+}

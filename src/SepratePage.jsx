@@ -48,54 +48,92 @@ const SepratePage = () => {
         </div>
       </motion.div>
       <div>
+        <section className=" flex flex-col items-center gap-2 mx-auto my-36 sm:w-[100%] font-sans">
+          <div className="w-[90%]">
+            <div className="flex flex-col items-center justify-center sm:flex-row   ">
+              <p className="text-wrap text-4xl leading-normal text-left">
+                {key.mainFeature.overview}
+              </p>
 
-      <section className=" flex flex-col items-center gap-2 mx-auto my-36 sm:w-[70%]">
-        <div className="w-[90%]">
+              <p className="text-wrap text-[14px] font-sans leading-9 ">
+                {key.mainFeature.text}
+              </p>
+            </div>
+            <div className="my-10">
+              <img
+                src={key.mainFeature.image}
+                alt=""
+                className="block mx-auto lg:px-44 lg:py-32 transition ease-out duration-500 transform hover:scale-110"
+              />
+            </div>
+            <div>
+              <p className="font-sans text-center font-semibold tracking-widest my-10 text-4xl">
+                FEATURES
+              </p>
+              <div className="text-wrap text-[14px] font-sans sm:leading-6 md:leading-7 lg:leading-9">
+                <div className="flex flex-col gap-16 md:flex-row items-start justify-center pb-24">
+                  <div className="w-full lg:w-1/2 p-2 ">
+                    <img
+                      src={key.features[2].image}
+                      alt="Dubai view"
+                      className="w-full h-auto shadow-md"
+                    />
+                  </div>
+                  <div className="w-full lg:w-1/3 p-2">
+                    <p className="">{key.features[0].text}</p>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-16 md:flex-row items-start justify-center pb-24">
+                  <div className="w-full lg:w-1/3 p-2 order-2 md:order-1">
+                    <p className="">{key.features[1].text}</p>
+                  </div>
+                  <div className="w-full lg:w-1/2 p-2 order-1 md:order-2">
+                    <img
+                      src={key.features[1].image}
+                      alt="Dubai view"
+                      className="w-full h-auto shadow-md"
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-16 md:flex-row items-start justify-center pb-24 ">
+                  <div className="w-full lg:w-1/2 p-2">
+                    <img
+                      src={key.features[2].image}
+                      alt="Dubai view"
+                      className="w-full h-auto shadow-md"
+                    />
+                  </div>
+                  <div className="w-full lg:w-1/3 p-2">
+                    <p className="">{key.features[2].text}</p>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-16 md:flex-row items-start justify-center pb-24 ">
+                  <div className="w-full lg:w-1/3 p-2 order-2 md:order-1">
+                    <p className="">{key.features[3].text}</p>
+                  </div>
+                  <div className="w-full lg:w-1/2 p-2 order-1 md:order-2">
+                    <img
+                      src={key.features[3].image}
+                      alt="Dubai view"
+                      className="w-full h-auto shadow-md"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Amenities />
+            <InteriorDesign {...key} />
+            {/* <PaymentTerm {...key}  /> */}
+            <PaymentPlan />
+            <MapSection {...key} />
+          </div>
+        </section>
 
-        <div className="flex flex-col items-center justify-center sm:flex-row   ">
-          <p className="text-wrap text-4xl leading-normal text-left">
-            {key.mainFeature.overview}
-          </p>
+        <div className="w-full  ">
+          <RegisterYourInterest />
 
-          <p className="text-wrap text-[14px] font-sans   leading-9 ">
-            {key.mainFeature.text}
-          </p>
+          <SubscribeNewsletter />
         </div>
-        <div className="  flex items-center justify-center  ">
-          <img src={key.mainFeature.image} alt="" />
-        </div>
-
-        <div className="flex  flex-col items-start justify-center sm:flex-row">
-          <p>{key.features[0].text}</p>
-          <img src={key.features[0].image} alt="" className="" />
-        </div>
-        <div className="flex flex-col items-start justify-center sm:flex-row">
-          <img src={key.features[1].image} alt="" />
-          <p>{key.features[1].text}</p>
-        </div>
-        <div className="flex flex-col items-start justify-center sm:flex-row">
-          <p>{key.features[2].text}</p>
-          <img src={key.features[2].image} alt="" />
-        </div>
-        <div className="flex  flex-col items-start justify-center sm:flex-row">
-          <img src={key.features[3].image} alt="" />
-          <p>{key.features[3].text}</p>
-        </div>
-        <Amenities/>
-        <InteriorDesign {...key} />
-        {/* <PaymentTerm {...key}  /> */}
-        <PaymentPlan />
-        <MapSection {...key} />
-        </div>
-      
-      </section>
-      
-      
-      <div className="w-full  ">
-        <RegisterYourInterest />
-       
-         <SubscribeNewsletter/>
-      </div>
       </div>
     </>
   );

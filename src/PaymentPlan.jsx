@@ -18,9 +18,11 @@ const PaymentPlan = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white">
-      <h2 className="text-3xl font-bold mb-6 text-center">Payment Plan</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="max-w-full mx-auto p-6 ">
+      <p className="font-sans text-center font-semibold tracking-widest my-20 text-4xl">
+        PAYMENT PLAN
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {installments.map((installment, index) => (
           <div
             key={index}

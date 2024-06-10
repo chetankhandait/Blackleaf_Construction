@@ -18,28 +18,24 @@ const PaymentPlan = () => {
   ];
 
   return (
-    <div className="max-w-full mx-auto p-6 ">
-      <p className="font-sans text-center font-semibold tracking-widest my-20 text-4xl">
-        PAYMENT PLAN
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="max-w-4xl mx-auto p-6 mt-4 bg-white">
+      <h2 className="text-4xl tracking-wide  mb-6 text-center font-sans">Payment Plan</h2>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-7">
         {installments.map((installment, index) => (
           <div
             key={index}
-            className="flex items-center space-x-4 p-4 border border-yellow-600 rounded-lg bg-transparent"
+            className="flex items-center justify-center gap-1 flex-col space-x-6 p-4  rounded-lg bg-transparent"
           >
             <div className="flex-shrink-0">
-              <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-full border-4 border-yellow-600 text-yellow-600 text-lg md:text-xl font-semibold">
+              <div className="w-40 h-40 flex items-center justify-center rounded-full border-2 border-[#cc9964] text-[#cc9964] text-lg md:text-3xl  ">
                 {installment.percentage}
               </div>
             </div>
-            <div>
-              <h3 className="text-xl font-bold text-yellow-600">
-                {installment.description}
-              </h3>
-              <p className="text-gray-500">{installment.date}</p>
+            
+               
+              <p className="text-black mx-auto text-sm font-semibold  font-sans">{installment.date}</p>
             </div>
-          </div>
+          
         ))}
       </div>
     </div>

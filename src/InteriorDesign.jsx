@@ -13,7 +13,7 @@ const InteriorDesign = (des) => {
           <img
             src={k}
             alt=""
-            className="w-[100%] block mx-auto py-10 px-2 lg:px-44 md:px-32 border-none transition ease-out duration-500 transform hover:scale-110"
+            className="w-[100%] block mx-auto py-10 px-2 lg:px-44 md:px-32 border-none transition ease-out duration-500 transform hover:scale-105"
           />
         </div>
       ))}

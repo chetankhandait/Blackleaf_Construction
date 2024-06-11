@@ -38,14 +38,21 @@ const Test = () => {
       }}
     >
       <div className='absolute top-1/2 left-0'>
-        <button className='px-2.5 w-[100px] h-[60px] bg-[#202020] font-sans'>
-          Next <br/> Project
+        <button className='px-2.5 w-[60px]   bg-[#202020] font-sans sm:w-[100px] h-[60px]'>
+        <span className="block md:hidden">{'<'}</span>
+  <span className="hidden md:block">
+    Next  <br /> Project
+  </span>
         </button>
       </div>
       <div className='absolute top-1/2 right-0'>
-        <button className='px-2.5 w-[100px] h-[60px] bg-[#202020] text-white font-sans'>
-          Previous <br/> Project
-        </button>
+      <button className='px-2.5  w-[60px]  bg-[#202020] text-white font-sans sm:w-[100px] h-[60px]'>
+  <span className="block md:hidden">{'>'}</span>
+  <span className="hidden md:block">
+    Previous <br /> Project
+  </span>
+</button>
+
       </div>
       <div className='flex items-center justify-center h-full'>
         <div className='flex flex-col items-center mt-[11.1rem]'>

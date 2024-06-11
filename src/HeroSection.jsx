@@ -16,8 +16,20 @@ const HeroSection = () => {
       </motion.div> */}
          {/* <Navbar/> */}
        <Test/>
+       <div className='hidden sm:block'>
+
     <Filter/>
-        
+       </div>
+        <div className='absolute bottom-4 left-3 sm:hidden '>
+          <h3 className='px-4 py-1 bg-[#cc9964] text-white font-sans font-semibold '>
+            Filter 
+          </h3>
+        </div>
+        <div className='absolute bottom-4 right-3 sm:hidden '>
+          <h3 className='px-4 py-1 bg-[#cc9964] text-white font-sans font-semibold '>
+            Filter 
+          </h3>
+        </div>
 
     </div>
   );

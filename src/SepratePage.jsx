@@ -25,7 +25,7 @@ const SepratePage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setCompressing(true);
-    }, 2000); // Delay for 2 seconds before starting the compression animation
+    }, 1000); // Delay for 2 seconds before starting the compression animation
 
     return () => clearTimeout(timer);
   }, []);
@@ -38,7 +38,7 @@ const SepratePage = () => {
           width: compressing ? "90%" : "100%",
 
           marginTop: compressing ? "10px" : "0px",
-          transition: "width  4s",
+          transition: "width  2s",
         }}
       >
         <div className="flex  items-center justify-center">

@@ -1,24 +1,72 @@
-import {
-  FaBasketballBall,
-  FaBook,
-  FaCarBattery,
-  FaCut,
-  FaDog,
-  FaDumbbell,
-  FaParking,
-  FaShieldAlt,
-  FaSwimmingPool,
-  // FaTree,
-  FaUserFriends,
-} from "react-icons/fa";
-import { SiDecentraland } from "react-icons/si";
-
+// import {
+//   FaBasketballBall,
+//   FaBook,
+//   FaCarBattery,
+//   FaCut,
+//   FaDog,
+//   FaDumbbell,
+//   FaParking,
+//   FaShieldAlt,
+//   FaSwimmingPool,
+//   // FaTree,
+//   FaUserFriends,
+//   FaGlassCheers,
+//   FaSwimmingPool,
+//   FaWater,
+//   FaTree,
+//   FaFireExtinguisher,
+//   FaDumbbell,
+//   FaCar,
+//   FaRunning,
+//   FaChair,
+//   FaBuilding,
+//   FaChild,
+//   FaTrash,
+//   FaElevator,
+//   FaUtensils,
+//   FaTachometerAlt,
+//   FaBasketballBall,
+//   FaSpa,
+//   FaUsers,
+//   FaCloudRain,
+//   FaHotTub,
+//   FaShieldAlt,
+//   FaCoffee,
+//   FaBatteryFull,
+//   FaChild,
+//   FaDoorOpen,
+//   FaTree,
+//   FaElevator,
+//   FaFireExtinguisher,
+//   FaCar,
+//   FaTint,
+//   FaChair,
+//   FaLock,
+//   FaCloudRain,
+//   FaBook,
+//   FaSwimmingPool,
+//   FaShieldAlt,
+//   FaRecycle,
+//   FaBatteryFull,
+//   FaBuilding,
+// } from "react-icons/fa";
+// import { SiDecentraland } from "react-icons/si";
+// // import { FaGlassCheers } from "react-icons/fa";
+// import {
+//   MdOutlineSkating,
+//   MdOutlineSportsTennis,
+//   MdOutlinePark,
+//   MdOutlineStairs,
+// } from "react-icons/md";
+// import { GiTerrace, GiPartyPopper, GiGazebo } from "react-icons/gi";
+// import { IoIosPeople } from "react-icons/io";
 
 const data = [
   {
     id: "il-primo",
     name: "Il Primo",
-    mainImage: "https://richlanddubai.com/wp-content/uploads/2017/07/cover-1.jpg",
+    mainImage:
+      "https://richlanddubai.com/wp-content/uploads/2017/07/cover-1.jpg",
     mainFeature: {
       overview: "IT'S WHERE YOU BELONG",
       text: "Welcome to Il Primo, the epitome of luxury and sophistication, centrally located in the cultural and entertainment hub of Dubai.",
@@ -143,7 +191,8 @@ const data = [
   {
     id: "THE ANANTA ASPIRE",
     name: "THE ANANTA ASPIRE",
-    mainImage: "https://richlanddubai.com/wp-content/uploads/2017/07/serena-Bella-Casa-Image-1.jpg",
+    mainImage:
+      "https://richlanddubai.com/wp-content/uploads/2017/07/serena-Bella-Casa-Image-1.jpg",
     mainFeature: {
       overview: "Introducing the new way to the good Life",
       text: "The Ananta Aspire promises to blend luxury,comfort,style and technology to create happy homes. This upcoming high-rise project on Zirkapur-Patiala Highway will be architectural milestone.",
@@ -152,7 +201,7 @@ const data = [
     features: [
       {
         image: "./anantaaspire/feature.jpg",
-        text: "Il Primo has redefined luxury and given new meaning to lavish living. It is centrally located in the only cultural and entertainment hub of its kind in the region.Il Primo has redefined luxury and given new meaning to lavish living. It is centrally located in the only cultural and entertainment hub of its kind in the region.",
+        text: "Nabha is well-connected to other parts of city by road, which passes through the heart of this suburb. Prominent shopping malls, movie theatres, school, and hospitals are present in proximity of this residential project.",
       },
       {
         image: "./anantaaspire/feature2.jpg",
@@ -167,52 +216,286 @@ const data = [
         text: "The epitome of style and contemporary class, the interiors of Il Primo are tastefully designed and crafted. With marble features, sleek wooden elements, and modern pieces, your home will exude refined elegance.",
       },
     ],
-    // amenities: [
-    //   {
-    //     image: <FaUserFriends size={30} />,
-    //     text: "CENTARL PARK",
-    //   },
-    //   {
-    //     image: <FaUserFriends size={30} />,
-    //     text: "CLUBHOUSE",
-    //   },
-    //   {
-    //     image: <FaSwimmingPool size={30} />,
-    //     text: "INFINITE POOL",
-    //   },
-    //   {
-    //     image: <FaBasketballBall size={30} />,
-    //     text: "sPORTS ARENA",
-    //   },
-    //   {
-    //     image: <FaCarBattery size={30} />,
-    //     text: "EV CAR CHARGING POINTS",
-    //   },
-    //   {
-    //     image: <FaShieldAlt size={30} />,
-    //     text: "3 TIER SECURITY SYSTEM",
-    //   },
-    //   {
-    //     image: <FaParking size={30} />,
-    //     text: "AMPLE PARKING SPACE",
-    //   },
-    //   {
-    //     image: <FaDog size={30} />,
-    //     text: "SEPERATE PET FRIENDLY ZONE",
-    //   },
-    //   {
-    //     image: <FaDumbbell size={30} />,
-    //     text: "GYMS",
-    //   },
-    //   {
-    //     image: <FaBook size={30} />,
-    //     text: "LIBRARY",
-    //   },
-    //   {
-    //     image: <FaCut size={30} />,
-    //     text: "SALON & SPA",
-    //   },
-    // ],
+    amenities: [
+      { image: "FaChild", text: "Children's Play Area" },
+      { image: "FaDoorOpen", text: "Entrance Lobby" },
+      { image: "FaTree", text: "Landscaping & Tree Planting" },
+      { image: "FaElevator", text: "Lift(s)" },
+      { image: "FaFireExtinguisher", text: "Fire Fighting System" },
+      { image: "FaCar", text: "Car Parking" },
+      { image: "FaTint", text: "24X7 Water Supply" }, // Updated to FaTint for water supply
+      { image: "FaChair", text: "Senior Citizen Siteout" },
+      { image: "FaLock", text: "Gated Community" },
+      { image: "FaCloudRain", text: "Storm Water Drains" },
+      { image: "FaBook", text: "Library" },
+      { image: "FaCloudRain", text: "Rain Water Harvesting" },
+      { image: "FaSwimmingPool", text: "Infinity Pool" },
+      { image: "FaShieldAlt", text: "24x7 Security" },
+      { image: "FaRecycle", text: "Sewage Treatment Plant" },
+      { image: "FaBatteryFull", text: "Power Backup" },
+      { image: "FaBuilding", text: "Club House" },
+    ],
+    interior: {
+      images: [
+        "./anantaaspire/CK_09264.jpg",
+        "./anantaaspire/CK_09266.jpg",
+        "./anantaaspire/CK_09267.jpg",
+        "./anantaaspire/CK_09269.jpg",
+        "./anantaaspire/CK_09271.jpg",
+        "./anantaaspire/CK_09273.jpg",
+        "./anantaaspire/CK_09276.jpg",
+        "./anantaaspire/CK_09280.jpg",
+        "./anantaaspire/CK_09286.jpg",
+      ],
+    },
+    paymentPlan: [
+      {
+        installment: "1st Installment",
+        percentage: "10%",
+        dueDate: "Purchase Date",
+      },
+      {
+        installment: "2nd Installment",
+        percentage: "5%",
+        dueDate: "28-Apr-2017",
+      },
+      {
+        installment: "3rd Installment",
+        percentage: "5%",
+        dueDate: "30-Sep-2017",
+      },
+      {
+        installment: "10% Completion",
+        percentage: "10%",
+        dueDate: "28-Feb-2018",
+      },
+      {
+        installment: "20% Completion",
+        percentage: "5%",
+        dueDate: "30-Aug-2018",
+      },
+      {
+        installment: "40% Completion",
+        percentage: "10%",
+        dueDate: "30-Mar-2019",
+      },
+      {
+        installment: "60% Completion",
+        percentage: "5%",
+        dueDate: "30-Aug-2019",
+      },
+      {
+        installment: "80% Completion",
+        percentage: "10%",
+        dueDate: "30-Jan-2020",
+      },
+      {
+        installment: "Handover",
+        percentage: "40%",
+        dueDate: "30-Sep-2020",
+      },
+    ],
+    location: {
+      name: "Dubailand",
+      planning:
+        "Here under one roof we providing to you with all the fields to marketing for your business, like Photography, Graphic Designing, Advertising, Social Media Management, E-Commerce Services, 360° Virtual Tour, SEO Work, Website & Application Development, Digital Business Card Facility and Many more Services.",
+    },
+  },
+  {
+    id: "REGAL HEIGHTS",
+    name: "REGAL HEIGHTS",
+    mainImage:
+      "https://richlanddubai.com/wp-content/uploads/2017/07/serena-Bella-Casa-Image-1.jpg",
+    mainFeature: {
+      overview: "Promising Destination.In Every Sense of the Word",
+      text: "Set to grace the city's impressive skyline,Regal Heights will be one such landmark address,located right at the heart of the Mohali.",
+      image: "./anantaaspire/mainfeature1.jpg",
+    },
+    features: [
+      {
+        image: "./anantaaspire/feature.jpg",
+        text: "Sector 91 is well-connected to other parts of city by road, which passes through the heart of this suburb. Prominent shopping malls, movie theatres, school, and hospitals are present in proximity of this residential project.",
+      },
+      {
+        image: "./anantaaspire/feature2.jpg",
+        text: "The sprawling clubhouse invites you to unwind with dip at the pool. Here.every day is bound to give you a taste pf life less ordinary.",
+      },
+      {
+        image: "./anantaaspire/feature3.jpg",
+        text: "Here,a good entrance lobby welcomes you to a life of unrestrained luxury. The windows frame gorgeous views of landscaped gardens.",
+      },
+      {
+        image: "./anantaaspire/feature4.jpg",
+        text: "Nestled in a serene environment, our luxurious apartments offer a harmonious blend of modern amenities and natural beauty, providing an unparalleled living experience that redefines comfort and elegance.",
+      },
+    ],
+    amenities: [
+      {
+        image: "GiTerrace",
+        text: "TERRACE LOUNGE",
+      },
+      {
+        image: "FaDumbbell",
+        text: "GYMNASIUM",
+      },
+      {
+        image: "FaSwimmingPool",
+        text: "SWIMMING POOL",
+      },
+      {
+        image: "FaGlassCheers",
+        text: "PARTY HALL",
+      },
+      {
+        image: "MdOutlineSkating",
+        text: "SKATING RINK",
+      },
+      {
+        image: "MdOutlineSportsTennis",
+        text: "BADMINTON COURT",
+      },
+      {
+        image: "MdOutlinePark",
+        text: "PODIUM GARDEN",
+      },
+      {
+        image: "GiGazebo",
+        text: "GAZEBO",
+      },
+      {
+        image: "FaDumbbell",
+        text: "GYMS",
+      },
+      {
+        image: "IoIosPeople",
+        text: "SEPERATE SITOUTS",
+      },
+      {
+        image: "MdOutlineStairs",
+        text: "EASY STAIRCASE",
+      },
+    ],
+    interior: {
+      images: [
+        "./anantaaspire/CK_09264.jpg",
+        "./anantaaspire/CK_09266.jpg",
+        "./anantaaspire/CK_09267.jpg",
+        "./anantaaspire/CK_09269.jpg",
+        "./anantaaspire/CK_09271.jpg",
+        "./anantaaspire/CK_09273.jpg",
+        "./anantaaspire/CK_09276.jpg",
+        "./anantaaspire/CK_09280.jpg",
+        "./anantaaspire/CK_09286.jpg",
+      ],
+    },
+    paymentPlan: [
+      {
+        installment: "1st Installment",
+        percentage: "10%",
+        dueDate: "Purchase Date",
+      },
+      {
+        installment: "2nd Installment",
+        percentage: "5%",
+        dueDate: "28-Apr-2017",
+      },
+      {
+        installment: "3rd Installment",
+        percentage: "5%",
+        dueDate: "30-Sep-2017",
+      },
+      {
+        installment: "10% Completion",
+        percentage: "10%",
+        dueDate: "28-Feb-2018",
+      },
+      {
+        installment: "20% Completion",
+        percentage: "5%",
+        dueDate: "30-Aug-2018",
+      },
+      {
+        installment: "40% Completion",
+        percentage: "10%",
+        dueDate: "30-Mar-2019",
+      },
+      {
+        installment: "60% Completion",
+        percentage: "5%",
+        dueDate: "30-Aug-2019",
+      },
+      {
+        installment: "80% Completion",
+        percentage: "10%",
+        dueDate: "30-Jan-2020",
+      },
+      {
+        installment: "Handover",
+        percentage: "40%",
+        dueDate: "30-Sep-2020",
+      },
+    ],
+    location: {
+      name: "Dubailand",
+      planning:
+        "Here under one roof we providing to you with all the fields to marketing for your business, like Photography, Graphic Designing, Advertising, Social Media Management, E-Commerce Services, 360° Virtual Tour, SEO Work, Website & Application Development, Digital Business Card Facility and Many more Services.",
+    },
+  },
+  {
+    id: "THE RESORT",
+    name: "THE RESORT",
+    mainImage:
+      "https://richlanddubai.com/wp-content/uploads/2017/07/serena-Bella-Casa-Image-1.jpg",
+    mainFeature: {
+      overview: "Beautiful world inside & a green world outside!",
+      text: "At The Resort, you will experience an unparalleled lifestyle with ample Greenery, open spaces and serene environment. ",
+      image: "./anantaaspire/mainfeature1.jpg",
+    },
+    features: [
+      {
+        image: "./anantaaspire/feature.jpg",
+        text: "Designed as the ultimate family home, The Resort's 2BHK, 3BHK and Penthouses are fully equipped with all modern amenities, leaving you awestruckThe Resort, the new Group housing offering of Omaxe aims at providing class living at very attractive and affordable rates. It offers multiple options of 2 BHK, 2 BHK + Utility, 3BHK and Penthouses, ranging from 1034 sq. ft. to 3678 sq. ft.",
+      },
+      {
+        image: "./anantaaspire/feature2.jpg",
+        text: "The entrance lobby, with a ceiling that seems to be kissing the sky, and the breathtaking floor design, combined with comfortable and cozy sit-outs reinforce the feeling of living in a resort!",
+      },
+      {
+        image: "./anantaaspire/feature3.jpg",
+        text: " An added bonus are the huge open spaces and beautiful landscaped green areas. The Resort is likely to revitalise the entire housing sector, particularly affordable housing, not just in Chandigarh, but in the entire region",
+      },
+      {
+        image: "./anantaaspire/feature4.jpg",
+        text: " It offers high class amenities including a large Swimming Pool with Jacuzzis, Gymnasium, Restaurant, Cafeteria, Conference Room and Sports Facilities, with dedicated areas for Kids and the elderly.",
+      },
+    ],
+    amenities: [
+      { image: `FaSwimmingPool`, text: "Swimming Pool" },
+      { image: `FaWater`, text: "Fountains" },
+      { image: `FaTree`, text: "Landscaping & Tree Planting" },
+      { image: `FaFireExtinguisher`, text: "Fire Fighting System" },
+      { image: `FaDumbbell`, text: "Gymnasium" },
+      { image: `FaWater`, text: "24X7 Water Supply" },
+      { image: `FaCar`, text: "Car Parking" },
+      { image: `FaRunning`, text: "Jogging Track" },
+      { image: `FaChair`, text: "Senior Citizen Sitout" },
+      { image: `FaWater`, text: "Sewage Treatment Plant" },
+      { image: `FaBuilding`, text: "Club House" },
+      { image: `FaChild`, text: "Children's Play Area" },
+      { image: `FaTrash`, text: "Solid Waste Management And Disposal" },
+      { image: `FaElevator`, text: "Lift(s)" },
+      { image: `FaUtensils`, text: "Restaurant" },
+      { image: `FaTachometerAlt`, text: "Meter Room" },
+      { image: `FaBasketballBall`, text: "Basketball Court" },
+      { image: `FaSpa`, text: "Yoga / Meditation Area" },
+      { image: `FaUsers`, text: "Conference Room" },
+      { image: `FaCloudRain`, text: "Rain Water Harvesting" },
+      { image: `FaHotTub`, text: "Jacuzzi" },
+      { image: `FaShieldAlt`, text: "24x7 Security" },
+      { image: `FaCoffee`, text: "Cafeteria" },
+      { image: `FaBatteryFull`, text: "Power Backup" },
+    ],
+
     interior: {
       images: [
         "./anantaaspire/CK_09264.jpg",

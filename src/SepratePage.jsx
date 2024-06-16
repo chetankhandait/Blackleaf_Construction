@@ -10,7 +10,7 @@ import PaymentPlan from "./PaymentPlan";
 import RegisterYourInterest from "./ContactUsSection";
 import Amenities from "./Ammentites";
 import SubscribeNewsletter from "./Newsletter";
-
+ 
 const SepratePage = () => {
   const { Id } = useParams();
   console.log(data);
@@ -29,7 +29,7 @@ const SepratePage = () => {
 
     return () => clearTimeout(timer);
   }, []);
-
+console.log(key.mainFeature.image)
   return (
     <>
       <motion.div
@@ -60,8 +60,9 @@ const SepratePage = () => {
               </p>
             </div>
             <div className="my-10">
+           
               <img
-                src={key.mainFeature.image}
+                src="https://i.postimg.cc/DyHmwNdp/mainfeature1.jpg"
                 alt=""
                 className="block mx-auto lg:px-44 lg:py-32 transition ease-out duration-500 transform hover:scale-110"
               />
@@ -89,7 +90,7 @@ const SepratePage = () => {
                   </div>
                   <div className="w-full lg:w-1/2 p-2 order-1 md:order-2">
                     <img
-                      src={key.features[1].image}
+                      src="https://i.postimg.cc/zVwqd0QT/mainfeature1.jpg"
                       alt="Dubai view"
                       className="w-full h-auto shadow-md"
                     />

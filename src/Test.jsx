@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './Test.css';
-import  {Link}  from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import data from '../Data/data';
-const images = [
-  'https://richlanddubai.com/wp-content/uploads/2017/07/cover-2.jpg',
-  'https://richlanddubai.com/wp-content/uploads/2017/07/cover-1.jpg',
-  'https://richlanddubai.com/wp-content/uploads/2017/07/serena-Bella-Casa-Image-1.jpg',
-];
+
+ 
 
 const Test = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [progress, setProgress] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
 
   useEffect(() => {
     if (isHovered) return;
@@ -21,38 +19,39 @@ const Test = () => {
     }, 100); // Adjust the speed of progress bar increment
 
     if (progress === 100) {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+       
+      setCurrentProjectIndex((prevIndex) => (prevIndex + 1) % data.length);
       setProgress(0);
     }
 
     return () => clearInterval(interval);
   }, [progress, isHovered]);
 
+  // console.log(data[currentProjectIndex].mainImage)
   return (
     <div
       className="carousel-container bg-cover bg-center flex-grow text-white"
       style={{
-        backgroundImage: `url(${images[currentImageIndex]})`,
+        backgroundImage: `url(${data[currentProjectIndex].mainImage})`,
         height: '100vh',
         width: '100%'
       }}
     >
       <div className='absolute top-1/2 left-0'>
-        <button className='px-2.5 w-[60px]   bg-[#202020] font-sans sm:w-[100px] h-[60px]'>
-        <span className="block md:hidden">{'<'}</span>
-  <span className="hidden md:block">
-    Next  <br /> Project
-  </span>
+        <button className='px-2.5 w-[60px] bg-[#202020] font-sans sm:w-[100px] h-[60px]'>
+          <span className="block md:hidden">{'<'}</span>
+          <span className="hidden md:block">
+            Next <br /> Project
+          </span>
         </button>
       </div>
       <div className='absolute top-1/2 right-0'>
-      <button className='px-2.5  w-[60px]  bg-[#202020] text-white font-sans sm:w-[100px] h-[60px]'>
-  <span className="block md:hidden">{'>'}</span>
-  <span className="hidden md:block">
-    Previous <br /> Project
-  </span>
-</button>
-
+        <button className='px-2.5 w-[60px] bg-[#202020] text-white font-sans sm:w-[100px] h-[60px]'>
+          <span className="block md:hidden">{'>'}</span>
+          <span className="hidden md:block">
+            Previous <br /> Project
+          </span>
+        </button>
       </div>
       <div className='flex items-center justify-center h-full'>
         <div className='flex flex-col items-center mt-[11.1rem]'>
@@ -61,13 +60,13 @@ const Test = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <Link to={`seperate/${data[0].id}`} >TOWN SQUARE</Link>
+            <Link to={`seperate/${data[currentProjectIndex].id}`}>{data[currentProjectIndex].name}</Link>
           </h2>
           <h4 className='mt-8 font-sans font-semibold uppercase'>
             By Blackleaf Properties
           </h4>
-          <Link to={`/seperate`} className="btn"  >Know more</Link>
-          <h3 className='text-3xl mt-20'>01/13</h3>
+          <Link to={`/seperate`} className="btn">Know more</Link>
+          <h3 className='text-3xl mt-20'>0{currentProjectIndex + 1}/13</h3>
         </div>
       </div>
       <div className="progress-bar-container" style={{ width: '100%', position: 'absolute', bottom: 0 }}>

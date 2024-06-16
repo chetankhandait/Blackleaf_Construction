@@ -30,7 +30,7 @@ const HeroSection = () => {
             Filter 
           </h3>
         </div>
-
+           
     </div>
   );
 };

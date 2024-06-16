@@ -38,7 +38,7 @@ const SepratePage = () => {
           width: compressing ? "90%" : "100%",
 
           marginTop: compressing ? "10px" : "0px",
-          transition: "width  2s",
+          transition: "width  1s",
         }}
       >
         <div className="flex  items-center justify-center">

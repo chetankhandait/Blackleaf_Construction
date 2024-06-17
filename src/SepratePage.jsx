@@ -31,16 +31,21 @@ const SepratePage = () => {
 console.log(key.features[0].image)
   return (
     <>
-      < div
+      <motion.div
         className="bg-[url('https://richlanddubai.com/wp-content/uploads/2017/07/cover-2.jpg')]  mx-auto  w-full h-screen flex items-center justify-center  bg-center  bg-no-repeat "
-        
+        style={{
+          width: compressing ? "90%" : "100%",
+
+          marginTop: compressing ? "10px" : "0px",
+          transition: "width  1s",
+        }}
       >
         <div className="flex  items-center justify-center">
-          <h2 className=" text-center text-7xl text-white hover:underline ">
+          <h2 className=" text-center text-7xl text-white hover:underline">
             {Property.name}
           </h2>
         </div>
-      </ div>
+      </motion.div>
       <div>
         <section className=" flex flex-col items-center gap-2 mx-auto my-36 sm:w-[100%] font-sans">
           <div className="w-[90%]">
@@ -58,7 +63,7 @@ console.log(key.features[0].image)
               <img
                 src={key.mainFeature.image}
                 alt=""
-                className="block mx-auto  transition ease-out duration-500 transform hover:scale-110"
+                className="block mx-auto  transition ease-out duration-500 transform  "
               />
             </div>
             <div>

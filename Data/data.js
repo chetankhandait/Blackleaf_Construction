@@ -196,23 +196,23 @@ const data = [
     mainFeature: {
       overview: "Introducing the new way to the good Life",
       text: "The Ananta Aspire promises to blend luxury,comfort,style and technology to create happy homes. This upcoming high-rise project on Zirkapur-Patiala Highway will be architectural milestone.",
-      image: "./anantaaspire/mainfeature1.jpg",
+      image: "/anantaaspire/mainfeature1.png",
     },
     features: [
       {
-        image: "./anantaaspire/feature.jpg",
+        image: "/anantaaspire/feature1.png",
         text: "Nabha is well-connected to other parts of city by road, which passes through the heart of this suburb. Prominent shopping malls, movie theatres, school, and hospitals are present in proximity of this residential project.",
       },
       {
-        image: "./anantaaspire/feature2.jpg",
+        image: "/anantaaspire/feature1.png",
         text: "Rising 77 storeys, the marvelous residential complex comprises 119 units, surrounded by enchanting views and exceptional benefits. A podium of amenities and retail destinations guarantees absolute comfort and ease for all of the Il primo residents.",
       },
       {
-        image: "./anantaaspire/feature3.jpg",
+        image: "/anantaaspire/feature3.png",
         text: "Rising at the northern side of Dubai Opera, Il Primo offers unrivalled views of The Dubai Fountain and Burj Khalifa. With its prime location, residents of Il Primo can expect to be part of grand celebrations and entertainment events throughout the year.",
       },
       {
-        image: "./anantaaspire/feature4.jpg",
+        image: "/anantaaspire/feature4.png",
         text: "The epitome of style and contemporary class, the interiors of Il Primo are tastefully designed and crafted. With marble features, sleek wooden elements, and modern pieces, your home will exude refined elegance.",
       },
     ],
@@ -237,15 +237,15 @@ const data = [
     ],
     interior: {
       images: [
-        "./anantaaspire/CK_09264.jpg",
-        "./anantaaspire/CK_09266.jpg",
-        "./anantaaspire/CK_09267.jpg",
-        "./anantaaspire/CK_09269.jpg",
-        "./anantaaspire/CK_09271.jpg",
-        "./anantaaspire/CK_09273.jpg",
-        "./anantaaspire/CK_09276.jpg",
-        "./anantaaspire/CK_09280.jpg",
-        "./anantaaspire/CK_09286.jpg",
+        "/anantaaspire/CK_09264.JPG",
+        "/anantaaspire/CK_09266.JPG",
+        "/anantaaspire/CK_09267.JPG",
+        "/anantaaspire/CK_09269.JPG",
+        "/anantaaspire/CK_09271.JPG",
+        "/anantaaspire/CK_09273.JPG",
+        "/anantaaspire/CK_09276.JPG",
+        "/anantaaspire/CK_09280.JPG",
+        "/anantaaspire/CK_09286.JPG",
       ],
     },
     paymentPlan: [
@@ -309,23 +309,23 @@ const data = [
     mainFeature: {
       overview: "Promising Destination.In Every Sense of the Word",
       text: "Set to grace the city's impressive skyline,Regal Heights will be one such landmark address,located right at the heart of the Mohali.",
-      image: "./anantaaspire/mainfeature1.jpg",
+      image: "/anantaaspire/mainfeature1.png",
     },
     features: [
       {
-        image: "./anantaaspire/feature.jpg",
+        image: "/anantaaspire/feature1.png",
         text: "Sector 91 is well-connected to other parts of city by road, which passes through the heart of this suburb. Prominent shopping malls, movie theatres, school, and hospitals are present in proximity of this residential project.",
       },
       {
-        image: "./anantaaspire/feature2.jpg",
+        image: "/anantaaspire/feature2.png",
         text: "The sprawling clubhouse invites you to unwind with dip at the pool. Here.every day is bound to give you a taste pf life less ordinary.",
       },
       {
-        image: "./anantaaspire/feature3.jpg",
+        image: "/anantaaspire/feature3.png",
         text: "Here,a good entrance lobby welcomes you to a life of unrestrained luxury. The windows frame gorgeous views of landscaped gardens.",
       },
       {
-        image: "./anantaaspire/feature4.jpg",
+        image: "/anantaaspire/feature4.png",
         text: "Nestled in a serene environment, our luxurious apartments offer a harmonious blend of modern amenities and natural beauty, providing an unparalleled living experience that redefines comfort and elegance.",
       },
     ],
@@ -377,15 +377,15 @@ const data = [
     ],
     interior: {
       images: [
-        "./anantaaspire/CK_09264.jpg",
-        "./anantaaspire/CK_09266.jpg",
-        "./anantaaspire/CK_09267.jpg",
-        "./anantaaspire/CK_09269.jpg",
-        "./anantaaspire/CK_09271.jpg",
-        "./anantaaspire/CK_09273.jpg",
-        "./anantaaspire/CK_09276.jpg",
-        "./anantaaspire/CK_09280.jpg",
-        "./anantaaspire/CK_09286.jpg",
+        "/anantaaspire/CK_09264.JPG",
+        "/anantaaspire/CK_09266.JPG",
+        "/anantaaspire/CK_09267.JPG",
+        "/anantaaspire/CK_09269.JPG",
+        "/anantaaspire/CK_09271.JPG",
+        "/anantaaspire/CK_09273.JPG",
+        "/anantaaspire/CK_09276.JPG",
+        "/anantaaspire/CK_09280.JPG",
+        "/anantaaspire/CK_09286.JPG",
       ],
     },
     paymentPlan: [
@@ -449,23 +449,23 @@ const data = [
     mainFeature: {
       overview: "Beautiful world inside & a green world outside!",
       text: "At The Resort, you will experience an unparalleled lifestyle with ample Greenery, open spaces and serene environment. ",
-      image: "./anantaaspire/mainfeature1.jpg",
+      image: "/anantaaspire/mainfeature1.jpg",
     },
     features: [
       {
-        image: "./anantaaspire/feature.jpg",
+        image: "/anantaaspire/feature.png",
         text: "Designed as the ultimate family home, The Resort's 2BHK, 3BHK and Penthouses are fully equipped with all modern amenities, leaving you awestruckThe Resort, the new Group housing offering of Omaxe aims at providing class living at very attractive and affordable rates. It offers multiple options of 2 BHK, 2 BHK + Utility, 3BHK and Penthouses, ranging from 1034 sq. ft. to 3678 sq. ft.",
       },
       {
-        image: "./anantaaspire/feature2.jpg",
+        image: "/anantaaspire/feature2.png",
         text: "The entrance lobby, with a ceiling that seems to be kissing the sky, and the breathtaking floor design, combined with comfortable and cozy sit-outs reinforce the feeling of living in a resort!",
       },
       {
-        image: "./anantaaspire/feature3.jpg",
+        image: "/anantaaspire/feature3.png",
         text: " An added bonus are the huge open spaces and beautiful landscaped green areas. The Resort is likely to revitalise the entire housing sector, particularly affordable housing, not just in Chandigarh, but in the entire region",
       },
       {
-        image: "./anantaaspire/feature4.jpg",
+        image: "/anantaaspire/feature4.png",
         text: " It offers high class amenities including a large Swimming Pool with Jacuzzis, Gymnasium, Restaurant, Cafeteria, Conference Room and Sports Facilities, with dedicated areas for Kids and the elderly.",
       },
     ],
@@ -498,15 +498,15 @@ const data = [
 
     interior: {
       images: [
-        "./anantaaspire/CK_09264.jpg",
-        "./anantaaspire/CK_09266.jpg",
-        "./anantaaspire/CK_09267.jpg",
-        "./anantaaspire/CK_09269.jpg",
-        "./anantaaspire/CK_09271.jpg",
-        "./anantaaspire/CK_09273.jpg",
-        "./anantaaspire/CK_09276.jpg",
-        "./anantaaspire/CK_09280.jpg",
-        "./anantaaspire/CK_09286.jpg",
+        "/anantaaspire/CK_09264.JPG",
+        "/anantaaspire/CK_09266.JPG",
+        "/anantaaspire/CK_09267.JPG",
+        "/anantaaspire/CK_09269.JPG",
+        "/anantaaspire/CK_09271.JPG",
+        "/anantaaspire/CK_09273.JPG",
+        "/anantaaspire/CK_09276.JPG",
+        "/anantaaspire/CK_09280.JPG",
+        "/anantaaspire/CK_09286.JPG",
       ],
     },
     paymentPlan: [

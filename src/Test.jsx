@@ -6,11 +6,18 @@ import data from '../Data/data';
  
 
 const Test = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+ 
   const [progress, setProgress] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
-
+    const nextProject= ()=>{
+      setCurrentProjectIndex((prevIndex)=>((prevIndex)+1)%data.length)
+    }
+    const previosProject=()=>{
+      setCurrentProjectIndex((prevIndex) =>
+        prevIndex === 0 ? data.length - 1 : prevIndex - 1
+      );
+    }
   useEffect(() => {
     if (isHovered) return;
 
@@ -38,18 +45,18 @@ const Test = () => {
       }}
     >
       <div className='absolute top-1/2 left-0'>
-        <button className='px-2.5 w-[60px] bg-[#202020] font-sans sm:w-[100px] h-[60px]'>
+        <button className='px-2.5 w-[60px] bg-[#202020] font-sans sm:w-[100px] h-[60px]'onClick={previosProject}>
           <span className="block md:hidden">{'<'}</span>
-          <span className="hidden md:block">
-            Next <br /> Project
+          <span className="hidden md:block" >
+            Previos <br /> Project
           </span>
         </button>
       </div>
       <div className='absolute top-1/2 right-0'>
-        <button className='px-2.5 w-[60px] bg-[#202020] text-white font-sans sm:w-[100px] h-[60px]'>
+        <button className='px-2.5 w-[60px] bg-[#202020] text-white font-sans sm:w-[100px] h-[60px]' onClick={nextProject}>
           <span className="block md:hidden">{'>'}</span>
-          <span className="hidden md:block">
-            Previous <br /> Project
+          <span className="hidden md:block" >
+            Next <br /> Project
           </span>
         </button>
       </div>

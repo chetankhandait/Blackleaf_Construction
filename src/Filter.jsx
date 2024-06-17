@@ -6,9 +6,18 @@ const Filter = () => {
   const [selectedItems, setSelectedItems] = useState({ 1: null, 2: null, 3: null });
 
   const blocks = [
-    { id: 1,type:"Property Type ", items: ['Chetan', 'Item 1-2', 'Item 1-3'] },
-    { id: 2,type:"Neighbourhood", items: ['Chirag', 'Item 2-2', 'Item 2-3'] },
-    { id: 3,type:"Developer", items: ['Palak', 'Item 3-2', 'Item 3-3'] },
+    { id: 1,type:"ALl Property ", items: ['Property 1 ', 'Property 2', 
+      'Property 3',
+      'Property 4',
+      'Property 5',
+      'Property 6',
+      'Property 7',
+
+
+
+      
+    ] },
+   
   ];
 
   const handleBlockClick = (id) => {
@@ -21,13 +30,13 @@ const Filter = () => {
   };
 
   return (
-    <div className="     w-full     ">
+    <div className="     w-full h-[104.007px]    ">
       {expandedBlock === null && (
-        <div className="flex justify-evenly gap-7     ">
+        <div className="flex justify-start       ">
           {blocks.map((block) => (
             <div 
               key={block.id} 
-              className="flex flex-col items-center  justify-start pl-4 pt-2 w-2/3 text-white text-center "
+              className="flex flex-col items-center  justify-start pl-4  pt-2   text-white text-center "
               onClick={() => handleBlockClick(block.id)}
             >
               <h2 className='flex items-center text-sm '> 
@@ -42,9 +51,9 @@ const Filter = () => {
                 </h2>
             </div>
           ))}
-          <div className=" text-white bg-green-600 p-10 font-semibold font-sans ">
+          {/* <div className=" text-white bg-green-600 p-10 font-semibold font-sans ">
             <button className=" ">Search</button>
-          </div>
+          </div> */}
         </div>
       )}
 

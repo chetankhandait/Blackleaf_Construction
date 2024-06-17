@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useParams } from "react-router-dom";
 import data from "../Data/data";
-import Amenties from "./Amenties";
 import InteriorDesign from "./InteriorDesign";
 import PaymentTerm from "./PaymentTerm";
 import MapSection from "./MapSection";
@@ -29,24 +28,19 @@ const SepratePage = () => {
 
     return () => clearTimeout(timer);
   }, []);
-console.log(key.mainFeature.image)
+console.log(key.features[0].image)
   return (
     <>
-      <motion.div
+      < div
         className="bg-[url('https://richlanddubai.com/wp-content/uploads/2017/07/cover-2.jpg')]  mx-auto  w-full h-screen flex items-center justify-center  bg-center  bg-no-repeat "
-        style={{
-          width: compressing ? "90%" : "100%",
-
-          marginTop: compressing ? "10px" : "0px",
-          transition: "width  1s",
-        }}
+        
       >
         <div className="flex  items-center justify-center">
-          <h2 className=" text-7xl text-white hover:underline">
+          <h2 className=" text-center text-7xl text-white hover:underline ">
             {Property.name}
           </h2>
         </div>
-      </motion.div>
+      </ div>
       <div>
         <section className=" flex flex-col items-center gap-2 mx-auto my-36 sm:w-[100%] font-sans">
           <div className="w-[90%]">
@@ -62,9 +56,9 @@ console.log(key.mainFeature.image)
             <div className="my-10">
            
               <img
-                src="https://i.postimg.cc/DyHmwNdp/mainfeature1.jpg"
+                src={key.mainFeature.image}
                 alt=""
-                className="block mx-auto lg:px-44 lg:py-32 transition ease-out duration-500 transform hover:scale-110"
+                className="block mx-auto  transition ease-out duration-500 transform hover:scale-110"
               />
             </div>
             <div>
@@ -75,7 +69,7 @@ console.log(key.mainFeature.image)
                 <div className="flex flex-col gap-16 md:flex-row items-start justify-center pb-24">
                   <div className="w-full lg:w-1/2 p-2 ">
                     <img
-                      src={key.features[2].image}
+                      src={key.features[0].image}
                       alt="Dubai view"
                       className="w-full h-auto shadow-md"
                     />
@@ -90,7 +84,7 @@ console.log(key.mainFeature.image)
                   </div>
                   <div className="w-full lg:w-1/2 p-2 order-1 md:order-2">
                     <img
-                      src="https://i.postimg.cc/zVwqd0QT/mainfeature1.jpg"
+                      src={key.features[1].image}
                       alt="Dubai view"
                       className="w-full h-auto shadow-md"
                     />
@@ -122,7 +116,7 @@ console.log(key.mainFeature.image)
                 </div>
               </div>
             </div>
-            <Amenities />
+            <Amenities {...key} />
             <InteriorDesign {...key} />
             {/* <PaymentTerm {...key}  /> */}
             <PaymentPlan />

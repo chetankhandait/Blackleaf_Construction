@@ -41,7 +41,8 @@ const Test = () => {
       style={{
         backgroundImage: `url(${data[currentProjectIndex].mainImage})`,
         height: '100vh',
-        width: '100%'
+        width: '100%',
+        
       }}
     >
       <div className='absolute top-1/2 left-0'>

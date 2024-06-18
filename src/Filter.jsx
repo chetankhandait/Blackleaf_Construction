@@ -6,7 +6,7 @@ const Filter = () => {
   const [selectedItems, setSelectedItems] = useState({ 1: null, 2: null, 3: null });
 
   const blocks = [
-    { id: 1,type:"ALl Property ", items: ['Property 1 ', 'Property 2', 
+    { id: 1,type:"ALL Property ", items: ['Property 1 ', 'Property 2', 
       'Property 3',
       'Property 4',
       'Property 5',
@@ -32,23 +32,23 @@ const Filter = () => {
   return (
     <div className="     w-full h-[104.007px]    ">
       {expandedBlock === null && (
-        <div className="flex justify-start       ">
+        <div className="flex justify-center       ">
           {blocks.map((block) => (
             <div 
               key={block.id} 
-              className="flex flex-col items-center  justify-start pl-4  pt-2   text-white text-center "
+              className="flex   items-center  justify-start pl-4   text-white text-center "
               onClick={() => handleBlockClick(block.id)}
             >
-              <h2 className='flex items-center text-sm '> 
-                <span className=''>
+              <h2 className='  py-5  uppercase text-4xl    '> 
+              
                 {block.type}
-                  </span> 
-                <FaCaretDown/>
+                   
+             
                 </h2>
-                <h2 className='text-4xl'>
+                {/* <h2 className='text-4xl'>
 
               {selectedItems[block.id] || `Block ${block.id}`}
-                </h2>
+                </h2> */}
             </div>
           ))}
           {/* <div className=" text-white bg-green-600 p-10 font-semibold font-sans ">

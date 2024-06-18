@@ -8,16 +8,18 @@ const InteriorDesign = (des) => {
       <p className="font-sans text-center font-semibold tracking-widest my-10 text-4xl">
         INTERIORS
       </p>
-      {des.interior.images.map((k) => (
-        <div>
-          <img
-            src={k}
-            alt=""
-            loading="lazy"
-            className="w-[100%] block mx-auto py-10 px-2 lg:px-44 md:px-32 border-none transition ease-out duration-500 transform hover:scale-105"
-          />
+      <div className="container mx-auto p-4">
+        <div className=" gap-4">
+          {des.interior.images.map((k) => (
+            <img
+              src={k}
+              alt=""
+              loading="lazy"
+              className="  mx-auto px-2 my-10 w-[300px] md:w-[700px] h-[200px] md:h-[400px] border-none "
+            />
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 };

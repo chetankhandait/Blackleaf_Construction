@@ -9,7 +9,7 @@ import PaymentPlan from "./PaymentPlan";
 import RegisterYourInterest from "./ContactUsSection";
 import Amenities from "./Ammentites";
 import SubscribeNewsletter from "./Newsletter";
- 
+
 const SepratePage = () => {
   const { Id } = useParams();
   console.log(data);
@@ -28,16 +28,16 @@ const SepratePage = () => {
 
     return () => clearTimeout(timer);
   }, []);
-console.log(key.features[0].image)
+  console.log(key.features[0].image);
   return (
     <>
       <motion.div
         className="bg-[url('https://richlanddubai.com/wp-content/uploads/2017/07/cover-2.jpg')]  mx-auto  w-full h-screen flex items-center justify-center  bg-center  bg-no-repeat "
         style={{
-          width: compressing ? "90%" : "100%",
+          width: compressing ? "80%" : "100%",
 
-          marginTop: compressing ? "10px" : "0px",
-          transition: "width  1s",
+          marginTop: compressing ? "20px" : "0px",
+          transition: "width  0.5s",
         }}
       >
         <div className="flex  items-center justify-center">
@@ -47,23 +47,22 @@ console.log(key.features[0].image)
         </div>
       </motion.div>
       <div>
-        <section className=" flex flex-col items-center gap-2 mx-auto my-36 sm:w-[100%] font-sans">
+        <section className=" flex flex-col items-center gap-2 mx-auto lg:my-36 sm:w-[100%] font-sans">
           <div className="w-[90%]">
-            <div className="flex flex-col items-center justify-center sm:flex-row   ">
-              <p className="text-wrap text-4xl leading-normal text-left">
+            <div className="flex mx-auto flex-col gap-5 items-center justify-center text-center lg:w-[50%] ">
+              <p className="text-wrap text-4xl leading-normal capitalize">
                 {key.mainFeature.overview}
               </p>
 
-              <p className="text-wrap text-[14px] font-sans leading-9 ">
+              <p className="text-wrap text-[16px] font-sans leading-9 ">
                 {key.mainFeature.text}
               </p>
             </div>
             <div className="my-10">
-           
               <img
                 src={key.mainFeature.image}
                 alt=""
-                className="block mx-auto  transition ease-out duration-500 transform  "
+                className="block mx-auto w-[750px] h-[300px] md:h-[450px] transition ease-out duration-500 transform  "
               />
             </div>
             <div>
@@ -76,7 +75,7 @@ console.log(key.features[0].image)
                     <img
                       src={key.features[0].image}
                       alt="Dubai view"
-                      className="w-full h-auto shadow-md"
+                      className="sm:w-[320px] sm:h-[200px] lg:w-[445px] lg:h-[275px] shadow-md"
                     />
                   </div>
                   <div className="w-full lg:w-1/3 p-2">
@@ -91,7 +90,7 @@ console.log(key.features[0].image)
                     <img
                       src={key.features[1].image}
                       alt="Dubai view"
-                      className="w-full h-auto shadow-md"
+                      className="sm:w-[320px] sm:h-[200px] lg:w-[445px] lg:h-[275px] shadow-md"
                     />
                   </div>
                 </div>
@@ -100,7 +99,7 @@ console.log(key.features[0].image)
                     <img
                       src={key.features[2].image}
                       alt="Dubai view"
-                      className="w-full h-auto shadow-md"
+                      className="sm:w-[320px] sm:h-[200px] lg:w-[445px] lg:h-[275px] shadow-md"
                     />
                   </div>
                   <div className="w-full lg:w-1/3 p-2">
@@ -115,7 +114,7 @@ console.log(key.features[0].image)
                     <img
                       src={key.features[3].image}
                       alt="Dubai view"
-                      className="w-full h-auto shadow-md"
+                      className="sm:w-[320px] sm:h-[200px] lg:w-[445px] lg:h-[275px] shadow-md"
                     />
                   </div>
                 </div>

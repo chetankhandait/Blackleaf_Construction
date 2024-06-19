@@ -9,8 +9,16 @@ import PaymentPlan from "./PaymentPlan";
 import RegisterYourInterest from "./ContactUsSection";
 import Amenities from "./Ammentites";
 import SubscribeNewsletter from "./Newsletter";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SepratePage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
   const { Id } = useParams();
   console.log(data);
   console.log(Id);
@@ -37,7 +45,7 @@ const SepratePage = () => {
           width: compressing ? "80%" : "100%",
 
           marginTop: compressing ? "20px" : "0px",
-          transition: "width  0.5s",
+          transition: "width  1s",
         }}
       >
         <div className="flex  items-center justify-center">
@@ -49,7 +57,10 @@ const SepratePage = () => {
       <div>
         <section className=" flex flex-col items-center gap-2 mx-auto lg:my-36 sm:w-[100%] font-sans">
           <div className="w-[90%]">
-            <div className="flex mx-auto flex-col gap-5 items-center justify-center text-center lg:w-[50%]  ">
+            <div
+              className="flex mx-auto flex-col gap-5 items-center justify-center text-center lg:w-[50%]  "
+              data-aos="fade-up"
+            >
               <p className="text-wrap text-4xl leading-normal capitalize">
                 {key.mainFeature.overview}
               </p>
@@ -58,11 +69,11 @@ const SepratePage = () => {
                 {key.mainFeature.text}
               </p>
             </div>
-            <div className="my-10">
+            <div className="my-10" data-aos="zoom-out">
               <img
                 src={key.mainFeature.image}
                 alt=""
-                className="block mx-auto w-[750px] h-[300px] md:h-[450px] transition ease-out duration-500 transform  "
+                className="block mx-auto w-[750px] h-[300px] md:h-[450px]"
               />
             </div>
             <div>
@@ -71,22 +82,28 @@ const SepratePage = () => {
               </p>
               <div className="text-wrap text-[14px] font-sans sm:leading-6 md:leading-7 lg:leading-9">
                 <div className="flex flex-col gap-16 md:flex-row items-start justify-center pb-24">
-                  <div className="w-full lg:w-1/2 p-2 ">
+                  <div data-aos="fade-right" className="w-full lg:w-1/2 p-2 ">
                     <img
                       src={key.features[0].image}
                       alt="Dubai view"
                       className="sm:w-[320px] sm:h-[200px] lg:w-[445px] lg:h-[275px] shadow-md"
                     />
                   </div>
-                  <div className="w-full lg:w-1/3  ">
+                  <div className="w-full lg:w-1/3 " data-aos="fade-left">
                     <p className="">{key.features[0].text}</p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-16 md:flex-row items-start justify-center pb-24">
-                  <div className="w-full lg:w-1/3   order-2 md:order-1">
+                  <div
+                    className="w-full lg:w-1/3   order-2 md:order-1"
+                    data-aos="fade-right"
+                  >
                     <p className="">{key.features[1].text}</p>
                   </div>
-                  <div className="w-full lg:w-1/2 p-2 order-1 md:order-2">
+                  <div
+                    className="w-full lg:w-1/2 p-2 order-1 md:order-2"
+                    data-aos="fade-left"
+                  >
                     <img
                       src={key.features[1].image}
                       alt="Dubai view"
@@ -95,22 +112,28 @@ const SepratePage = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-16 md:flex-row items-start justify-center pb-24 ">
-                  <div className="w-full lg:w-1/2 p-2">
+                  <div className="w-full lg:w-1/2 p-2" data-aos="fade-right">
                     <img
                       src={key.features[2].image}
                       alt="Dubai view"
                       className="sm:w-[320px] sm:h-[200px] lg:w-[445px] lg:h-[275px] shadow-md"
                     />
                   </div>
-                  <div className="w-full lg:w-1/3  ">
+                  <div className="w-full lg:w-1/3" data-aos="fade-left">
                     <p className="">{key.features[2].text}</p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-16 md:flex-row items-start justify-center pb-24 ">
-                  <div className="w-full lg:w-1/3   order-2 md:order-1">
+                  <div
+                    className="w-full lg:w-1/3   order-2 md:order-1"
+                    data-aos="fade-right"
+                  >
                     <p className="">{key.features[3].text}</p>
                   </div>
-                  <div className="w-full lg:w-1/2 p-2 order-1 md:order-2">
+                  <div
+                    className="w-full lg:w-1/2 p-2 order-1 md:order-2"
+                    data-aos="fade-left"
+                  >
                     <img
                       src={key.features[3].image}
                       alt="Dubai view"

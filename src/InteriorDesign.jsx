@@ -1,6 +1,13 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const InteriorDesign = (des) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500, // Animation duration
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
   console.log(des.interior.images[0]);
   const { ...d } = des;
   return (
@@ -9,12 +16,13 @@ const InteriorDesign = (des) => {
         INTERIORS
       </p>
       <div className="container mx-auto p-4">
-        <div className=" gap-4">
+        <div className="gap-4">
           {des.interior.images.map((k) => (
             <img
               src={k}
               alt=""
               loading="lazy"
+              data-aos="fade-up"
               className="  mx-auto px-2 my-10 w-[616px] h-[200px] md:h-[400px] border-none object-cover "
             />
           ))}

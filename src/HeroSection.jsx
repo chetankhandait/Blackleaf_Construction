@@ -7,8 +7,7 @@ const HeroSection = () => {
    
   return (
     <div className=" w-full flex flex-col h-screen justify-between flex-1   bg-[#202020]    ">
-      <img src="./mainfeature1.png" alt="" />
-      
+        
        <Test/>
        <div className='hidden sm:block'>
 

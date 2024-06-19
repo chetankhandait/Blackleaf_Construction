@@ -238,7 +238,7 @@ const data = [
     interior: {
       images: [
         "/anantaaspire/interior1.jpg",
-        "/anantaaspire/interior23.jpg",
+        "/anantaaspire/interior2.jpg",
         "/anantaaspire/interior3.jpg",
         "/anantaaspire/interior4.jpg",
         "/anantaaspire/interior5.jpg",
@@ -309,23 +309,23 @@ const data = [
     mainFeature: {
       overview: "Promising Destination.In Every Sense of the Word",
       text: "Set to grace the city's impressive skyline,Regal Heights will be one such landmark address,located right at the heart of the Mohali.",
-      image: "/regalheights/mainfeature2.png",
+      image: "/regalheights/mainfeature2.jpg",
     },
     features: [
       {
-        image: "/regalheights/feature1.png",
+        image: "/regalheights/feature1.jpg",
         text: "Sector 91 is well-connected to other parts of city by road, which passes through the heart of this suburb. Prominent shopping malls, movie theatres, school, and hospitals are present in proximity of this residential project.",
       },
       {
-        image: "/regalheights/feature2.png",
+        image: "/regalheights/feature2.jpg",
         text: "The sprawling clubhouse invites you to unwind with dip at the pool. Here.every day is bound to give you a taste pf life less ordinary.",
       },
       {
-        image: "/regalheights/feature3.png",
+        image: "/regalheights/feature3.jpg",
         text: "Here,a good entrance lobby welcomes you to a life of unrestrained luxury. The windows frame gorgeous views of landscaped gardens.",
       },
       {
-        image: "/regalheights/feature4.png",
+        image: "/regalheights/feature4.jpg",
         text: "Nestled in a serene environment, our luxurious apartments offer a harmonious blend of modern amenities and natural beauty, providing an unparalleled living experience that redefines comfort and elegance.",
       },
     ],
@@ -418,11 +418,11 @@ const data = [
     mainFeature: {
       overview: "Beautiful world inside & a green world outside!",
       text: "At The Resort, you will experience an unparalleled lifestyle with ample Greenery, open spaces and serene environment. ",
-      image: "/resort/mainfeature3.avif",
+      image: "/resort/mainfeature3.jpg",
     },
     features: [
       {
-        image: "/resort/feature1.avif",
+        image: "/resort/feature1.jpg",
         text: "Designed as the ultimate family home, The Resort's 2BHK, 3BHK and Penthouses are fully equipped with all modern amenities, leaving you awestruckThe Resort, the new Group housing offering of Omaxe aims at providing class living at very attractive and affordable rates. It offers multiple options of 2 BHK, 2 BHK + Utility, 3BHK and Penthouses, ranging from 1034 sq. ft. to 3678 sq. ft.",
       },
       {
@@ -473,15 +473,17 @@ const data = [
 
     interior: {
       images: [
-        "/anantaaspire/CK_09264.JPG",
-        "/anantaaspire/CK_09266.JPG",
-        "/anantaaspire/CK_09267.JPG",
-        "/anantaaspire/CK_09269.JPG",
-        "/anantaaspire/CK_09271.JPG",
-        "/anantaaspire/CK_09273.JPG",
-        "/anantaaspire/CK_09276.JPG",
-        "/anantaaspire/CK_09280.JPG",
-        "/anantaaspire/CK_09286.JPG",
+        "/resort/interior1.jpg",
+        "/resort/interior2.jpg",
+        "/resort/interior3.jpg",
+        "/resort/interior4.jpg",
+        "/resort/interior5.jpg",
+        "/resort/interior6.jpg",
+        "/resort/interior7.jpg",
+        "/resort/interior8.jpg",
+        "/resort/interior9.jpg",
+        "/resort/interior10.jpg",
+        "/resort/interior11.jpg",
       ],
     },
     paymentPlan: [

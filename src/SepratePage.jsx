@@ -14,9 +14,9 @@ const SepratePage = () => {
   const { Id } = useParams();
   console.log(data);
   console.log(Id);
-  const Property = data.find((find) => find.id === Id);
+  const Property = data.find((find) => find.name === Id);
   const { ...key } = Property;
-  console.log(key.mainFeature.image);
+  console.log(key);
   // const Hotel = data.find((find) => find.id === Id);
   // console.log(Hotel);
   const [compressing, setCompressing] = useState(false);
@@ -49,7 +49,7 @@ const SepratePage = () => {
       <div>
         <section className=" flex flex-col items-center gap-2 mx-auto lg:my-36 sm:w-[100%] font-sans">
           <div className="w-[90%]">
-            <div className="flex mx-auto flex-col gap-5 items-center justify-center text-center lg:w-[50%] ">
+            <div className="flex mx-auto flex-col gap-5 items-center justify-center text-center lg:w-[50%]  ">
               <p className="text-wrap text-4xl leading-normal capitalize">
                 {key.mainFeature.overview}
               </p>
@@ -78,12 +78,12 @@ const SepratePage = () => {
                       className="sm:w-[320px] sm:h-[200px] lg:w-[445px] lg:h-[275px] shadow-md"
                     />
                   </div>
-                  <div className="w-full lg:w-1/3 p-2">
+                  <div className="w-full lg:w-1/3  ">
                     <p className="">{key.features[0].text}</p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-16 md:flex-row items-start justify-center pb-24">
-                  <div className="w-full lg:w-1/3 p-2 order-2 md:order-1">
+                  <div className="w-full lg:w-1/3   order-2 md:order-1">
                     <p className="">{key.features[1].text}</p>
                   </div>
                   <div className="w-full lg:w-1/2 p-2 order-1 md:order-2">
@@ -102,12 +102,12 @@ const SepratePage = () => {
                       className="sm:w-[320px] sm:h-[200px] lg:w-[445px] lg:h-[275px] shadow-md"
                     />
                   </div>
-                  <div className="w-full lg:w-1/3 p-2">
+                  <div className="w-full lg:w-1/3  ">
                     <p className="">{key.features[2].text}</p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-16 md:flex-row items-start justify-center pb-24 ">
-                  <div className="w-full lg:w-1/3 p-2 order-2 md:order-1">
+                  <div className="w-full lg:w-1/3   order-2 md:order-1">
                     <p className="">{key.features[3].text}</p>
                   </div>
                   <div className="w-full lg:w-1/2 p-2 order-1 md:order-2">

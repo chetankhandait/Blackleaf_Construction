@@ -85,14 +85,14 @@ const Test = () => {
           </span>
         </button>
       </div>
-      <div className="flex items-center justify-center flex-grow z-50">
+      <div className="flex items-center justify-center flex-grow z-50 pt-10">
         <div className="flex flex-col items-center text-center">
           <h2
-            className={`text-3xl sm:text-7xl text-white hover:underline ${animateTitle ? 'animate-title' : ''}`}
+            className={`text-3xl sm:text-8xl text-white hover:underline ${animateTitle ? 'animate-title' : ''}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <Link to={`seperate/${data[currentProjectIndex].id}`}>
+            <Link to={`seperate/${data[currentProjectIndex].name}`}>
               {data[currentProjectIndex].name}
             </Link>
           </h2>

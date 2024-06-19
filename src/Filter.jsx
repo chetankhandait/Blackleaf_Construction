@@ -1,28 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { RiFileListFill } from "react-icons/ri";
+
+import data from '../Data/data';
+import { Link } from 'react-router-dom';
 
 const Filter = () => {
   const [expandedBlock, setExpandedBlock] = useState(null);
   const [selectedItems, setSelectedItems] = useState({ 1: null, 2: null, 3: null });
   const listRef = useRef(null);
+  const [propertyNames, setPropertyNames] = useState([]);
 
-  const blocks = [
-    { 
-      id: 1,
-      type: "ALL Property",
-      items: [
-        'Property 1', 
-        'Property 2', 
-        'Property 3', 
-        'Property 4', 
-        'Property 4', 
-        'Property 4', 
-        'Property 4', 
-        'Property 5', 
-        'Property 6', 
-        'Property 7'
-      ] 
-    }
-  ];
+  useEffect(() => {
+    // Extract property names from the data
+    const names = data.map(property => property.name);
+    setPropertyNames(names);
+  }, []);
 
   const handleBlockClick = (id) => {
     setExpandedBlock(id);
@@ -67,22 +59,20 @@ const Filter = () => {
     <div className="w-full">
       {expandedBlock === null && (
         <div className="flex justify-center">
-          {blocks.map((block) => (
-            <div 
-              key={block.id} 
-              className="flex items-center justify-start pl-4 text-white text-center cursor-pointer"
-              onClick={() => handleBlockClick(block.id)}
-            >
-              <h2 className='font-sans py-5 uppercase text-6xl'>{block.type}</h2>
-            </div>
-          ))}
+          <div 
+            className="flex items-center justify-start pl-4 text-white text-center cursor-pointer gap-2"
+            onClick={() => handleBlockClick(1)}
+          >
+            <RiFileListFill className='text-[#cc9964] text-3xl sm:text-6xl '/>
+            <h2 className='font-sans py-5 uppercase text-3xl sm:text-6xl'>ALL Property</h2>
+          </div>
         </div>
       )}
 
       {expandedBlock !== null && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 text-white z-50 p-8">
           <button 
-            className="absolute top-4 right-4 text-5xl font-sans px-4 py-2"
+            className="absolute top-4 right-4 text-3xl sm:text-5xl font-sans px-4 py-2"
             onClick={() => setExpandedBlock(null)}
           >
             x
@@ -91,13 +81,16 @@ const Filter = () => {
             className="flex flex-col items-center gap-7 overflow-y-auto h-full transition-all duration-300 ease-in-out" 
             ref={listRef}
           >
-            {blocks.find(block => block.id === expandedBlock).items.map((item, index) => (
+            {propertyNames.map((item, index) => (
               <div 
                 key={index} 
                 className="py-2 cursor-pointer transition-transform duration-300" 
-                onClick={() => handleItemClick(expandedBlock, item)}
+                onClick={() => handleItemClick(1, item)}
               >
+                <Link to={`./seperate/${item}`}>
+                
                 {item}
+                </Link>
               </div>
             ))}
           </div>

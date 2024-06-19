@@ -25,10 +25,9 @@ import {
   FaLock,
   FaRecycle,
   FaBook,
-  // FaGlassCheers,
+ 
   FaCocktail,
-  // FaDumbbell,
-  // FaSwimmingPool,
+ 
   FaGlassCheers,
   FaSnowflake,
   FaTableTennis,

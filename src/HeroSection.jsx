@@ -9,7 +9,7 @@ const HeroSection = () => {
     <div className=" w-full h-screen flex flex-col    justify-between flex-1   bg-[#202020]     ">
         
        <Test/>
-       <div className='hidden sm:block'>
+       <div className=' '>
 
     <Filter/>
        </div>

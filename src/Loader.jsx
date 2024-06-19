@@ -17,7 +17,7 @@ const Loader = ({ onAnimationComplete }) => {
        
 
       <motion.h2
-        className="absolute text-center top-1/2 text-4xl md:text-6xl font-semibold z-10  "
+        className="absolute text-center font-serif top-1/2 text-4xl md:text-6xl font-semibold z-10  "
         initial={{ y: "-100%", opacity: 1, color: "#202020" }} // Initial gray color
         animate={{
           y: ["-100%", "0%", "100%"],

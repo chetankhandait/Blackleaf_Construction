@@ -15,7 +15,7 @@ const InteriorDesign = (des) => {
               src={k}
               alt=""
               loading="lazy"
-              className="  mx-auto px-2 my-10 w-[300px] md:w-[700px] h-[200px] md:h-[400px] border-none "
+              className="  mx-auto px-2 my-10 w-[616px] h-[200px] md:h-[400px] border-none "
             />
           ))}
         </div>

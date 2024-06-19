@@ -6,14 +6,14 @@ import Test from './Test';
 const HeroSection = () => {
    
   return (
-    <div className=" w-full flex flex-col h-screen justify-between flex-1   bg-[#202020]    ">
+    <div className=" w-full h-screen flex flex-col    justify-between flex-1   bg-[#202020]     ">
         
        <Test/>
        <div className='hidden sm:block'>
 
     <Filter/>
        </div>
-        <div className='absolute bottom-4 left-3 sm:hidden '>
+        {/* <div className='absolute bottom-4 left-3 sm:hidden '>
           <h3 className='px-4 py-1 bg-[#cc9964] text-white font-sans font-semibold '>
             Filter 
           </h3>
@@ -22,7 +22,7 @@ const HeroSection = () => {
           <h3 className='px-4 py-1 bg-[#cc9964] text-white font-sans font-semibold '>
             Filter 
           </h3>
-        </div>
+        </div> */}
            
     </div>
   );

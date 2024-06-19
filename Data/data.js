@@ -191,8 +191,7 @@ const data = [
   {
     id: "THE ANANTA ASPIRE",
     name: "THE ANANTA ASPIRE",
-    mainImage:
-      "https://richlanddubai.com/wp-content/uploads/2017/07/serena-Bella-Casa-Image-1.jpg",
+    mainImage: "/anantaaspire/TOP.jpg",
     mainFeature: {
       overview: "Introducing the new way to the good Life",
       text: "The Ananta Aspire promises to blend luxury,comfort,style and technology to create happy homes. This upcoming high-rise project on Zirkapur-Patiala Highway will be architectural milestone.",
@@ -304,8 +303,7 @@ const data = [
   {
     id: "REGAL HEIGHTS",
     name: "REGAL HEIGHTS",
-    mainImage:
-      "https://richlanddubai.com/wp-content/uploads/2017/07/serena-Bella-Casa-Image-1.jpg",
+    mainImage: "/regalheights/TOP.jpeg",
     mainFeature: {
       overview: "Promising Destination.In Every Sense of the Word",
       text: "Set to grace the city's impressive skyline,Regal Heights will be one such landmark address,located right at the heart of the Mohali.",
@@ -413,8 +411,7 @@ const data = [
   {
     id: "THE RESORT",
     name: "THE RESORT",
-    mainImage:
-      "https://richlanddubai.com/wp-content/uploads/2017/07/serena-Bella-Casa-Image-1.jpg",
+    mainImage: "/resort/TOP.jpg",
     mainFeature: {
       overview: "Beautiful world inside & a green world outside!",
       text: "At The Resort, you will experience an unparalleled lifestyle with ample Greenery, open spaces and serene environment. ",

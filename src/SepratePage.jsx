@@ -40,12 +40,13 @@ const SepratePage = () => {
   return (
     <>
       <motion.div
-        className="bg-[url('https://richlanddubai.com/wp-content/uploads/2017/07/cover-2.jpg')]  mx-auto  w-full h-screen flex items-center justify-center  bg-center  bg-no-repeat "
+        className="  mx-auto  w-full h-screen flex items-center justify-center  bg-center  bg-no-repeat "
         style={{
-          width: compressing ? "80%" : "100%",
+          backgroundImage: `url(${Property.mainImage})`,
+          width: compressing ? "70%" : "100%",
 
           marginTop: compressing ? "20px" : "0px",
-          transition: "width  1s",
+          transition: "width  0.5s",
         }}
       >
         <div className="flex  items-center justify-center">

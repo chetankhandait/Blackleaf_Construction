@@ -1,31 +1,21 @@
-import React from 'react';
+import React from 'react'
 
-const Navbar = () => {
+const NavBar = () => {
   return (
-    <nav className="    absolute top-0 left-1/2            z-10     ">
-      <div className='flex items-center justify-center  gap-16 '>
-       
-       <div className='flex justify-start items-center gap-2'>
-       <h2>
-            home 
-        </h2>
-        <h2>
-            home 
-        </h2>
-        </div> 
-       <div className='flex  items-center gap-2'>
-       <h2>
-            home 
-        </h2>
-        <h2>
-            home 
-        </h2>
-        </div> 
-         
-        
-        </div> 
-    </nav>
-  );
-};
+    <div>
+       <div className = "flex uppercase font-sans font-semibold justify-around text-[#fff] w-full fixed top-6 z-40" >
+      <div>
+        <h2>Blackleaf Construction</h2>
+      </div>
+      <div className="flex items-center gap-6  ">
+        <h3>+91 99999999</h3>
+        <h3>
+          ChetanKhandait@gmail.com
+        </h3>
+      </div>
+     </div>
+    </div>
+  )
+}
 
-export default Navbar;
+export default NavBar

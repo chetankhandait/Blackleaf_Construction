@@ -11,6 +11,7 @@ import Amenities from "./Ammentites";
 import SubscribeNewsletter from "./Newsletter";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import NavBar from "./NavBar";
 
 const SepratePage = () => {
   useEffect(() => {
@@ -41,11 +42,16 @@ const SepratePage = () => {
   console.log(key.features[0].image);
   return (
     <>
+    <div className="overflow-hidden">
+    
       <motion.div
-        className="  mx-auto  w-full h-screen flex items-center justify-center  bg-center  bg-no-repeat "
+        className="  mx-auto  w-full h-[600px]  flex items-center justify-center  bg-center  bg-no-repeat "
         style={{
           backgroundImage: `url(${Property.mainImage})`,
+           
+          
           width: compressing ? "85%" : "100%",
+       
 
           marginTop: compressing ? "20px" : "0px",
           marginBottom: compressing ? "20px" : "0px",
@@ -69,7 +75,7 @@ const SepratePage = () => {
                 {key.mainFeature.overview}
               </p>
 
-              <p className="text-wrap text-[16px] font-sans leading-9 font-thin">
+              <p className="text-wrap text-[16px] font-sans leading-9 ">
                 {key.mainFeature.text}
               </p>
             </div>
@@ -94,7 +100,7 @@ const SepratePage = () => {
                     />
                   </div>
                   <div
-                    className="w-full lg:w-1/3 font-thin p-2"
+                    className="w-full lg:w-1/3  p-2"
                     data-aos="fade-left"
                   >
                     <p className="">{key.features[0].text}</p>
@@ -102,7 +108,7 @@ const SepratePage = () => {
                 </div>
                 <div className="flex flex-col gap-8 md:flex-row items-start justify-center pb-24">
                   <div
-                    className="w-full lg:w-1/3 p-2 font-thin order-2 md:order-1"
+                    className="w-full lg:w-1/3 p-2  order-2 md:order-1"
                     data-aos="fade-right"
                   >
                     <p className="">{key.features[1].text}</p>
@@ -127,7 +133,7 @@ const SepratePage = () => {
                     />
                   </div>
                   <div
-                    className="w-full lg:w-1/3 p-2 font-thin"
+                    className="w-full lg:w-1/3 p-2 "
                     data-aos="fade-left"
                   >
                     <p className="">{key.features[2].text}</p>
@@ -135,7 +141,7 @@ const SepratePage = () => {
                 </div>
                 <div className="flex flex-col gap-8 md:flex-row items-start justify-center pb-24 ">
                   <div
-                    className="w-full lg:w-1/3 p-2 font-thin order-2 md:order-1"
+                    className="w-full lg:w-1/3 p-2  order-2 md:order-1"
                     data-aos="fade-right"
                   >
                     <p className="">{key.features[3].text}</p>
@@ -167,6 +173,7 @@ const SepratePage = () => {
           <SubscribeNewsletter />
         </div>
       </div>
+    </div>
     </>
   );
 };

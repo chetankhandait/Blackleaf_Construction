@@ -3,7 +3,7 @@ import React from 'react'
 const NavBar = () => {
   return (
     <div>
-       <div className = "flex uppercase font-sans font-semibold justify-around text-[#fff] w-full fixed top-3  z-40 sm:top-6  " >
+       <div className = "flex uppercase   font-sans font-semibold justify-around text-[#fff] w-full fixed top-3  z-40 sm:top-6  " >
       <div>
         <h2 className='text-[13px]'>Blackleaf <br/> Construction</h2>
       </div>

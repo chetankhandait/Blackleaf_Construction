@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 const InteriorDesign = (des) => {
   useEffect(() => {
     AOS.init({
-      duration: 500, // Animation duration
+      duration: 1000, // Animation duration
       once: true, // Whether animation should happen only once
     });
   }, []);

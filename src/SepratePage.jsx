@@ -22,6 +22,7 @@ const SepratePage = () => {
       delay: 100,
     });
   }, []);
+  const phoneNumber = "+91 8878931385";
   const { Id } = useParams();
   console.log(data);
   console.log(Id);
@@ -52,7 +53,9 @@ const SepratePage = () => {
               </h2>
             </div>
             <div className="flex flex-col  text-[13px] gap-2  text-right  sm:flex-row sm:gap-6">
-              <h3>+91 8699285111</h3>
+              <h3>
+                <a href={`tel:${phoneNumber}`}>+91 8878931385</a>
+              </h3>
               <h3>ChetanKhandait@gmail.com</h3>
             </div>
           </div>

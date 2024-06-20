@@ -70,7 +70,7 @@ const Filter = () => {
       )}
 
       {expandedBlock !== null && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 text-white z-50 p-8">
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 text-white z-50 p-8 text-center">
           <button 
             className="absolute top-4 right-4 text-3xl sm:text-5xl font-sans px-4 py-2"
             onClick={() => setExpandedBlock(null)}
@@ -78,7 +78,7 @@ const Filter = () => {
             x
           </button>
           <div 
-            className="flex flex-col items-center gap-7 overflow-y-auto h-full transition-all duration-300 ease-in-out" 
+            className="flex flex-col justify-center items-center gap-7 overflow-y-auto h-full transition-all duration-300 ease-in-out" 
             ref={listRef}
           >
             {propertyNames.map((item, index) => (

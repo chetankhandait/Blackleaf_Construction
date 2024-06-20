@@ -108,11 +108,11 @@ const Test = () => {
         </div>
       </div>
       <div
-        className="progress-bar-container"
+        className="progress-bar-container z-30"
         style={{ width: '100%', position: 'absolute', bottom: 0 }}
       >
         <div
-          className="progress-bar"
+          className="progress-bar "
           style={{
             height: '8px',
             background: '#cc9964',

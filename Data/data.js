@@ -62,7 +62,6 @@
 // import { IoIosPeople } from "react-icons/io";
 
 const data = [
- 
   {
     id: "THE ANANTA ASPIRE",
     name: "THE ANANTA ASPIRE",
@@ -124,56 +123,34 @@ const data = [
     },
     paymentPlan: [
       {
-        installment: "1st Installment",
         percentage: "10%",
-        dueDate: "Purchase Date",
+        dueDate: "DOWN PAYMENT",
       },
       {
-        installment: "2nd Installment",
-        percentage: "5%",
-        dueDate: "28-Apr-2017",
-      },
-      {
-        installment: "3rd Installment",
-        percentage: "5%",
-        dueDate: "30-Sep-2017",
-      },
-      {
-        installment: "10% Completion",
         percentage: "10%",
-        dueDate: "28-Feb-2018",
+        dueDate: "AFTER 6 MONTHS",
       },
       {
-        installment: "20% Completion",
-        percentage: "5%",
-        dueDate: "30-Aug-2018",
-      },
-      {
-        installment: "40% Completion",
         percentage: "10%",
-        dueDate: "30-Mar-2019",
+        dueDate: "AFTER 12 MONTHS",
       },
       {
-        installment: "60% Completion",
-        percentage: "5%",
-        dueDate: "30-Aug-2019",
+        percentage: "15%",
+        dueDate: "AFTER 18 MONTHS",
       },
       {
-        installment: "80% Completion",
-        percentage: "10%",
-        dueDate: "30-Jan-2020",
+        percentage: "15%",
+        dueDate: "AFTER 24 MONTHS",
       },
       {
-        installment: "Handover",
-        percentage: "40%",
-        dueDate: "30-Sep-2020",
+        percentage: "15%",
+        dueDate: "AFTER 30 MONTHS",
+      },
+      {
+        percentage: "25%",
+        dueDate: "ON HANDOVER",
       },
     ],
-    location: {
-      name: "Dubailand",
-      planning:
-        "Here under one roof we providing to you with all the fields to marketing for your business, like Photography, Graphic Designing, Advertising, Social Media Management, E-Commerce Services, 360° Virtual Tour, SEO Work, Website & Application Development, Digital Business Card Facility and Many more Services.",
-    },
   },
   {
     id: "REGAL HEIGHTS",
@@ -232,56 +209,34 @@ const data = [
     },
     paymentPlan: [
       {
-        installment: "1st Installment",
         percentage: "10%",
-        dueDate: "Purchase Date",
+        dueDate: "DOWN PAYMENT",
       },
       {
-        installment: "2nd Installment",
         percentage: "5%",
-        dueDate: "28-Apr-2017",
+        dueDate: "AFTER 6 MONTHS",
       },
       {
-        installment: "3rd Installment",
         percentage: "5%",
-        dueDate: "30-Sep-2017",
+        dueDate: "AFTER 12 MONTHS",
       },
       {
-        installment: "10% Completion",
         percentage: "10%",
-        dueDate: "28-Feb-2018",
+        dueDate: "AFTER 24 MONTHS",
       },
       {
-        installment: "20% Completion",
-        percentage: "5%",
-        dueDate: "30-Aug-2018",
-      },
-      {
-        installment: "40% Completion",
         percentage: "10%",
-        dueDate: "30-Mar-2019",
+        dueDate: "AFTER 30 MONTHS",
       },
       {
-        installment: "60% Completion",
-        percentage: "5%",
-        dueDate: "30-Aug-2019",
+        percentage: "30%",
+        dueDate: "AFTER 36 MONTHS",
       },
       {
-        installment: "80% Completion",
-        percentage: "10%",
-        dueDate: "30-Jan-2020",
-      },
-      {
-        installment: "Handover",
-        percentage: "40%",
-        dueDate: "30-Sep-2020",
+        percentage: "30%",
+        dueDate: "ON HANDOVER",
       },
     ],
-    location: {
-      name: "Dubailand",
-      planning:
-        "Here under one roof we providing to you with all the fields to marketing for your business, like Photography, Graphic Designing, Advertising, Social Media Management, E-Commerce Services, 360° Virtual Tour, SEO Work, Website & Application Development, Digital Business Card Facility and Many more Services.",
-    },
   },
   {
     id: "THE RESORT",
@@ -360,56 +315,34 @@ const data = [
     },
     paymentPlan: [
       {
-        installment: "1st Installment",
-        percentage: "10%",
-        dueDate: "Purchase Date",
+        percentage: "20%",
+        dueDate: "DOWN PAYMENT",
       },
       {
-        installment: "2nd Installment",
         percentage: "5%",
-        dueDate: "28-Apr-2017",
+        dueDate: "AFTER 6 MONTHS",
       },
       {
-        installment: "3rd Installment",
         percentage: "5%",
-        dueDate: "30-Sep-2017",
+        dueDate: "AFTER 12 MONTHS",
       },
       {
-        installment: "10% Completion",
-        percentage: "10%",
-        dueDate: "28-Feb-2018",
+        percentage: "15%",
+        dueDate: "AFTER 18 MONTHS",
       },
       {
-        installment: "20% Completion",
-        percentage: "5%",
-        dueDate: "30-Aug-2018",
+        percentage: "15%",
+        dueDate: "AFTER 24 MONTHS",
       },
       {
-        installment: "40% Completion",
-        percentage: "10%",
-        dueDate: "30-Mar-2019",
+        percentage: "20%",
+        dueDate: "AFTER 30 MONTHS",
       },
       {
-        installment: "60% Completion",
-        percentage: "5%",
-        dueDate: "30-Aug-2019",
-      },
-      {
-        installment: "80% Completion",
-        percentage: "10%",
-        dueDate: "30-Jan-2020",
-      },
-      {
-        installment: "Handover",
-        percentage: "40%",
-        dueDate: "30-Sep-2020",
+        percentage: "20%",
+        dueDate: "ON HANDOVER",
       },
     ],
-    location: {
-      name: "Dubailand",
-      planning:
-        "Here under one roof we providing to you with all the fields to marketing for your business, like Photography, Graphic Designing, Advertising, Social Media Management, E-Commerce Services, 360° Virtual Tour, SEO Work, Website & Application Development, Digital Business Card Facility and Many more Services.",
-    },
   },
 ];
 export default data;

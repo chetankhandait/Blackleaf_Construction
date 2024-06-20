@@ -44,14 +44,15 @@ const SepratePage = () => {
     <>
       <div className="overflow-hidden">
         <div className="py-3">
-          <div className="flex uppercase font-sans font-semibold justify-around text-black w-full fixed top-3  z-40 sm:top-6  ">
-            <div>
+          <div className="flex uppercase font-sans font-semibold justify-around text-black w-full static top-3  z-40 sm:top-6  ">
+            <div className="flex">
+              <img src="/blackleaf.png" className="w-12" />
               <h2 className="text-[13px]">
                 Blackleaf <br /> Construction
               </h2>
             </div>
             <div className="flex flex-col  text-[13px] gap-2  text-right  sm:flex-row sm:gap-6">
-              <h3>+91 99999999</h3>
+              <h3>+91 8699285111</h3>
               <h3>ChetanKhandait@gmail.com</h3>
             </div>
           </div>
@@ -96,7 +97,7 @@ const SepratePage = () => {
                   className="block mx-auto w-[750px] h-[300px] md:h-[450px]"
                 />
               </div>
-              <div className="">
+              <div className="mx-auto lg:w-[80%]">
                 <p className="font-sans text-center font-semibold tracking-widest my-10 text-4xl">
                   FEATURES
                 </p>

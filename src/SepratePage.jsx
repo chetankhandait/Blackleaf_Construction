@@ -43,14 +43,15 @@ const SepratePage = () => {
         className="  mx-auto  w-full h-screen flex items-center justify-center  bg-center  bg-no-repeat "
         style={{
           backgroundImage: `url(${Property.mainImage})`,
-          width: compressing ? "70%" : "100%",
+          width: compressing ? "85%" : "100%",
 
           marginTop: compressing ? "20px" : "0px",
+          marginBottom: compressing ? "20px" : "0px",
           transition: "width  0.5s",
         }}
       >
         <div className="flex  items-center justify-center">
-          <h2 className=" text-center text-7xl text-white hover:underline">
+          <h2 className=" text-3xl text-center  text-white sm:text-7xl hover:underline">
             {Property.name}
           </h2>
         </div>
@@ -59,14 +60,14 @@ const SepratePage = () => {
         <section className=" flex flex-col items-center gap-2 mx-auto lg:my-36 sm:w-[100%] font-sans">
           <div className="w-[90%]">
             <div
-              className="flex mx-auto flex-col gap-5 items-center justify-center text-center lg:w-[50%]  "
+              className="flex mx-auto my-6 mb-12 gap-5 items-center justify-center text-left lg:w-[70%]   "
               data-aos="fade-up"
             >
-              <p className="text-wrap text-4xl leading-normal capitalize">
+              <p className="text-wrap text-4xl leading-normal uppercase font-serif">
                 {key.mainFeature.overview}
               </p>
 
-              <p className="text-wrap text-[16px] font-sans leading-9 ">
+              <p className="text-wrap text-[15px] font-sans leading-9 ">
                 {key.mainFeature.text}
               </p>
             </div>

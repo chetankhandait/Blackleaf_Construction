@@ -64,7 +64,7 @@ const Filter = () => {
             onClick={() => handleBlockClick(1)}
           >
             <RiFileListFill className='text-[#cc9964] text-3xl sm:text-6xl '/>
-            <h2 className='font-sans py-5 uppercase text-3xl sm:text-6xl'>ALL Property</h2>
+            <h2 className='font-serif py-5 uppercase text-2xl sm:text-6xl'>ALL Property</h2>
           </div>
         </div>
       )}

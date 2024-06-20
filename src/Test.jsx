@@ -50,9 +50,19 @@ const Test = () => {
 
   return (
     <>
-     
+     <div className = "flex uppercase font-sans font-semibold justify-around text-[#fff] w-full fixed top-6 z-40" >
+      <div>
+        <h2>Blackleaf Construction</h2>
+      </div>
+      <div className="flex items-center gap-6  ">
+        <h3>+91 99999999</h3>
+        <h3>
+          ChetanKhandait@gmail.com
+        </h3>
+      </div>
+     </div>
     <div
-      className="carousel-container bg-cover bg-center flex-grow text-white "
+      className="carousel-container bg-cover bg-center flex-grow text-white pt-16"
       style={{
         backgroundImage: `url(${data[currentProjectIndex].mainImage})`,
         height: '100vh',
@@ -99,7 +109,7 @@ const Test = () => {
           <h4 className={`mt-4 sm:mt-8 font-sans font-semibold uppercase ${animateTitle ? 'animate-title' : ''}`}>
             By Blackleaf Properties
           </h4>
-          <Link to={`/seperate/${data[currentProjectIndex].id}`} className={`btn mt-4 sm:mt-8 ${animateTitle ? 'animate-title' : ''}`}>
+          <Link to={`/seperate/${data[currentProjectIndex].name}`} className={`btn mt-4 sm:mt-8 ${animateTitle ? 'animate-title' : ''}`}>
             Know more
           </Link>
           <h3 className="text-xl sm:text-3xl mt-10 sm:mt-20">

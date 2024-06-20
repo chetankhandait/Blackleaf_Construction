@@ -303,7 +303,7 @@ const data = [
   {
     id: "REGAL HEIGHTS",
     name: "REGAL HEIGHTS",
-    mainImage: "/regalheights/TOP.jpeg",
+    mainImage: "/regalheights/TOP.jpg",
     mainFeature: {
       overview: "Promising Destination.In Every Sense of the Word",
       text: "Set to grace the city's impressive skyline,Regal Heights will be one such landmark address,located right at the heart of the Mohali.",

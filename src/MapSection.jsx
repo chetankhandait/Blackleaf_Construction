@@ -2,24 +2,21 @@ import React from "react";
 
 const MapSection = () => {
   return (
-    <div className="bg-[url('https://richlanddubai.com/wp-content/uploads/2017/05/map.jpg')]  w-full  ">
+    <div className="bg-[url('https://richlanddubai.com/wp-content/uploads/2017/05/map.jpg')]  w-full mb-10 ">
       <div className="flex flex-col items-center gap-10 ">
-        <p className="font-sans text-center font-semibold tracking-widest my-20 text-4xl">
-          DOWNTOWN
+        <p className="font-sans text-center font-semibold tracking-widest mt-20 mb-10 text-4xl">
+          BLACKLEAF CONSTRUCTION
         </p>
-        <p className="w-2/3 md:w-1/2 text-center">
-          Described as 'The Centre of Now,' Downtown Dubai is the flagship mega-
-          development by Emaar Properties. Located at its centre is Burj
-          Khalifa, the world's tallest building. The Dubai Mall, the world's
-          largest shopping and entertainment destination, and The Dubai
-          Fountain, the world's tallest performing fountain, add to
-          development's list of must see attractions while Souk A1 Bahar, an
-          Arabesque shopping and dining out destination, further broadens its
-          appeal to visitors. The Opera District, highlighted by the majestic
-          Dubai Opera, a 2,000-seat multi-format events venue, luxury hotels and
-          residences, is a brand-new addition. Downtown Dubai is a thriving city
-          hub with a unique mix of aesthetically designed residential towers and
-          commercial precincts.
+        <p className="w-full md:w-1/2 text-center leading-8 ">
+          Blackleaf Properties is a premier real estate company offering
+          top-tier properties in Mohali and Chandigarh. Their portfolio includes
+          modern apartments, luxurious villas, and well-designed commercial
+          spaces, all strategically located near essential amenities. In Mohali,
+          they provide a blend of comfort and convenience, perfect for families
+          and businesses. In Chandigarh, their properties feature contemporary
+          architecture and state-of-the-art facilities in highly desirable
+          neighborhoods. Blackleaf Properties ensures a high standard of living
+          and an excellent investment opportunity in these vibrant cities.
         </p>
         <button className="uppercase btn">See on the map</button>
       </div>

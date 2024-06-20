@@ -62,7 +62,7 @@ const SepratePage = () => {
         <section className=" flex flex-col items-center gap-2 mx-auto lg:my-36 sm:w-[100%] font-sans">
           <div className="w-[90%]">
             <div
-              className="flex mx-auto my-6 mb-12 gap-5 items-center justify-center text-left lg:w-[70%]   "
+              className="flex flex-col text-center md:flex-row mx-auto my-6 mb-12 gap-5 items-center justify-center md:text-left lg:w-[70%]   "
               data-aos="fade-up"
             >
               <p className="text-wrap text-4xl leading-normal uppercase font-serif">

@@ -43,7 +43,19 @@ const SepratePage = () => {
   return (
     <>
     <div className="overflow-hidden">
-    
+    <div className="py-3">
+       <div className = "flex uppercase font-sans font-semibold justify-around text-black w-full fixed top-3  z-40 sm:top-6  " >
+      <div>
+        <h2 className='text-[13px]'>Blackleaf <br/> Construction</h2>
+      </div>
+      <div className="flex flex-col  text-[13px] gap-2  text-right  sm:flex-row sm:gap-6">
+        <h3>+91 99999999</h3>
+        <h3>
+          ChetanKhandait@gmail.com
+        </h3>
+      </div>
+     </div>
+    </div>
       <motion.div
         className="  mx-auto  w-full h-[600px]  flex items-center justify-center  bg-center  bg-no-repeat "
         style={{
@@ -53,9 +65,9 @@ const SepratePage = () => {
           width: compressing ? "85%" : "100%",
        
 
-          marginTop: compressing ? "20px" : "0px",
+          marginTop: compressing ? "40px" : "0px",
           marginBottom: compressing ? "20px" : "0px",
-          transition: "width  0.5s",
+          transition: "width  0.7s",
         }}
       >
         <div className="flex  items-center justify-center">

@@ -24,7 +24,7 @@ const Loader = ({ onAnimationComplete }) => {
           opacity: [1, 1, 0],
           color: ["#202020", "#FFFFFF", "#FFFFFF"],
         }} // Transition to white
-        transition={{ duration: 2, ease: "easeInOut" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
       >
         BlackLeaf Constructions
       </motion.h2>
@@ -36,7 +36,7 @@ const Loader = ({ onAnimationComplete }) => {
           width: ["0%", "100%", "100%"],
           height: ["100%", "100%", "100%"],
         }}
-        transition={{ duration: 2, ease: "easeInOut" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
         onAnimationComplete={onAnimationComplete}
       />
     </div>

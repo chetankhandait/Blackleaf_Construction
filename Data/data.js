@@ -303,7 +303,7 @@ const data = [
   {
     id: "REGAL HEIGHTS",
     name: "REGAL HEIGHTS",
-    mainImage: "/regalheights/TOP.jpeg",
+    mainImage: "/regalheights/TOP.jpg",
     mainFeature: {
       overview: "Promising Destination.In Every Sense of the Word",
       text: "Set to grace the city's impressive skyline,Regal Heights will be one such landmark address,located right at the heart of the Mohali.",
@@ -420,18 +420,18 @@ const data = [
     features: [
       {
         image: "/resort/feature1.jpg",
-        text: "Designed as the ultimate family home, The Resort's 2BHK, 3BHK and Penthouses are fully equipped with all modern amenities, leaving you awestruckThe Resort, the new Group housing offering of Omaxe aims at providing class living at very attractive and affordable rates. It offers multiple options of 2 BHK, 2 BHK + Utility, 3BHK and Penthouses, ranging from 1034 sq. ft. to 3678 sq. ft.",
+        text: "Designed as the ultimate family home, The Resort's 2BHK, 3BHK and Penthouses are fully equipped with all modern amenities, leaving you awestruckThe Resort, the new Group housing offering of Omaxe aims at providing class living at very attractive and affordable rates. ",
       },
       {
-        image: "/resort/feature2.png",
+        image: "/resort/feature2.jpg",
         text: "The entrance lobby, with a ceiling that seems to be kissing the sky, and the breathtaking floor design, combined with comfortable and cozy sit-outs reinforce the feeling of living in a resort!",
       },
       {
-        image: "/resort/feature3.png",
+        image: "/resort/feature3.jpg",
         text: " An added bonus are the huge open spaces and beautiful landscaped green areas. The Resort is likely to revitalise the entire housing sector, particularly affordable housing, not just in Chandigarh, but in the entire region",
       },
       {
-        image: "/resort/feature4.png",
+        image: "/resort/feature4.jpg",
         text: " It offers high class amenities including a large Swimming Pool with Jacuzzis, Gymnasium, Restaurant, Cafeteria, Conference Room and Sports Facilities, with dedicated areas for Kids and the elderly.",
       },
     ],

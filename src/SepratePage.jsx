@@ -22,7 +22,8 @@ const SepratePage = () => {
       delay: 100,
     });
   }, []);
-  const phoneNumber = "+91 8878931385";
+  const phoneNumber = "📞+91 8699285111";
+  const email = "📩cg5031046@gmail.com";
   const { Id } = useParams();
   console.log(data);
   console.log(Id);
@@ -54,9 +55,13 @@ const SepratePage = () => {
             </div>
             <div className="flex flex-col  text-[13px] gap-2  text-right  sm:flex-row sm:gap-6">
               <h3>
-                <a href={`tel:${phoneNumber}`}>+91 8878931385</a>
+                <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
               </h3>
-              <h3>ChetanKhandait@gmail.com</h3>
+              <h3>
+                <a href={`mailto:${email}`} className="email-link">
+                  {email}
+                </a>
+              </h3>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
-
+const phoneNumber = "📞 +91 8699285111";
+const email = "📩 cg5031046@gmail.com";
 const NavBar = () => {
   return (
     <div>
@@ -11,8 +12,15 @@ const NavBar = () => {
           </h2>
         </div>
         <div className="flex flex-col  text-[13px] gap-2  text-right  sm:flex-row sm:gap-6">
-          <h3 className="cursor-pointer">+91 8699285111</h3>
-          <h3 className="cursor-pointer">ChetanKhandait@gmail.com</h3>
+          <h3>
+            <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+          </h3>
+          <h3 className="cursor-pointer">
+            {" "}
+            <a href={`mailto:${email}`} className="email-link">
+              {email}
+            </a>
+          </h3>
         </div>
       </div>
     </div>

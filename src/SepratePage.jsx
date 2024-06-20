@@ -17,6 +17,8 @@ const SepratePage = () => {
     AOS.init({
       duration: 1000, // Animation duration
       once: true, // Whether animation should happen only once
+      easing: "ease-in-out", // Easing function
+      delay: 100,
     });
   }, []);
   const { Id } = useParams();
@@ -67,7 +69,7 @@ const SepratePage = () => {
                 {key.mainFeature.overview}
               </p>
 
-              <p className="text-wrap text-[16px] font-sans leading-9 ">
+              <p className="text-wrap text-[16px] font-sans leading-9 font-thin">
                 {key.mainFeature.text}
               </p>
             </div>

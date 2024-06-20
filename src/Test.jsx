@@ -51,7 +51,7 @@ const Test = () => {
 
   return (
     <>
-    <NavBar/>
+   
     <div
       className="carousel-container bg-cover bg-center flex-grow text-white pt-16"
       style={{

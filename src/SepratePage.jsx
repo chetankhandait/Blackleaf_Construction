@@ -12,6 +12,7 @@ import SubscribeNewsletter from "./Newsletter";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import NavBar from "./NavBar";
+import Newsletter from "./Newsletter";
 
 const SepratePage = () => {
   useEffect(() => {
@@ -183,7 +184,7 @@ const SepratePage = () => {
           <div className="w-full  ">
             <RegisterYourInterest />
 
-            <SubscribeNewsletter />
+            <Newsletter />
           </div>
         </div>
       </div>

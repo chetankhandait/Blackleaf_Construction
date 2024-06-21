@@ -1,62 +1,71 @@
-import React, { useState } from "react";
-
-const SubscribeNewsletter = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    email: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic
-    console.log("Form data submitted:", formData);
-  };
-
+import React from 'react'
+import { FaFacebook, FaFacebookF, FaInstagram, FaInstagramSquare, FaLinkedin, FaPhone, FaPhoneAlt, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa'
+import { FaLocationArrow, FaLocationCrosshairs, FaLocationDot, FaLocationPin, FaMapLocation, FaPhoneFlip, FaSquareWhatsapp } from 'react-icons/fa6'
+import { CiLocationOn } from "react-icons/ci";
+const phoneNumber = "+91 8699285111";
+const Newsletter = () => {
   return (
-    <div className=" font-sans  mx-auto py-12 text-center bg-[#eeeeee]">
-      <h2 className="text-3xl   mb-8">SUBSCRIBE TO OUR NEWSLETTER</h2>
-      <form
-        onSubmit={handleSubmit}
-        className="flex flex-col items-center md:flex-row md:justify-center md:items-end"
-      >
-        <div className="md:mr-4 mb-4 md:mb-0">
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            value={formData.firstName}
-            onChange={handleChange}
-            placeholder="First Name"
-            className="block bg-[#eeeeee]  w-full md:w-auto px-4 py-2 border-b-2 border-custom focus:outline-none focus:border-gray-600"
-            required
-          />
+    <div className='py-12 '>
+      <div className="flex flex-col items-center   gap-7">
+        <div>
+          <p className='font-sans text-base font-semibold  '>
+          724 Imperial tower Cp67, Mohali, India, 160063
+          </p>
         </div>
-        <div className="md:mr-4 mb-4 md:mb-0">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Email"
-            className="block bg-[#eeeeee] w-full md:w-auto px-4 py-2 border-b-2 border-custom focus:outline-none focus:border-yellow-600"
-            required
-          />
-        </div>
-        <button
-          type="submit"
-          className="btn "
-        >
-          SUBSCRIBE
-        </button>
-      </form>
-    </div>
-  );
-};
+        <div className='flex items-center justify-center gap-10 '>
 
-export default SubscribeNewsletter;
+      <a
+        className="text-gray-700 hover:text-orange-600"
+        aria-label="Visit LinkedIn"
+        href="https://www.linkedin.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaFacebook className="h-8 w-8" />
+      </a>
+      <a
+        className="text-gray-700 hover:text-orange-600"
+        aria-label="Visit LinkedIn"
+          href={`tel:${phoneNumber}`} 
+        target="_blank"
+        rel="noopener noreferrer"
+      > 
+        <FaPhoneAlt className="h-7 w-8" />
+      </a>
+      <a
+        className="text-gray-700 hover:text-orange-600"
+        aria-label="Visit LinkedIn"
+        href="https://www.google.com/maps/place/Imperial+Tower/@30.7109933,76.6841922,17z/data=!3m1!4b1!4m6!3m5!1s0x390fefbcd4da202b:0xc247869b64041b89!8m2!3d30.7109887!4d76.6867725!16s%2Fg%2F11tc__6_5m?entry=tts&g_ep=EgoyMDI0MDYxNS4xKgBIAVAD"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaLocationDot className="h-7 w-8   " />
+      </a>
+      
+      <a
+        className="text-gray-700 hover:text-orange-600"
+        aria-label="Visit Facebook"
+        href="https://www.facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaSquareWhatsapp className="h-8 w-8" />
+      </a>
+      <a
+        className="text-gray-700 hover:text-orange-600"
+        aria-label="Visit Instagram"
+        href="https://www.instagram.com/blackleaf_properties/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaInstagramSquare className="h-8 w-8" />
+      </a>
+      
+        </div>
+    </div>
+    </div>
+  )
+}
+
+export default Newsletter
+ 

@@ -14,8 +14,6 @@ const Loader = ({ onAnimationComplete }) => {
       key={key}
       className="flex items-center justify-center h-screen w-screen relative overflow-hidden bg-white uppercase font-sans "
     >
-       
-
       <motion.h2
         className="absolute text-center font-serif top-1/2 text-4xl md:text-6xl font-semibold z-10  "
         initial={{ y: "-100%", opacity: 1, color: "#202020" }} // Initial gray color
@@ -24,11 +22,11 @@ const Loader = ({ onAnimationComplete }) => {
           opacity: [1, 1, 0],
           color: ["#202020", "#FFFFFF", "#FFFFFF"],
         }} // Transition to white
-        transition={{ duration: 1, ease: "easeInOut" }}
+        transition={{ duration: 2, ease: "easeInOut" }}
       >
-        BlackLeaf Constructions
+        BlackLeaf Properties
       </motion.h2>
-    
+
       <motion.div
         className="absolute inset-0 bg-[#202020]"
         initial={{ width: "0%", height: "100%" }}
@@ -36,7 +34,7 @@ const Loader = ({ onAnimationComplete }) => {
           width: ["0%", "100%", "100%"],
           height: ["100%", "100%", "100%"],
         }}
-        transition={{ duration: 1, ease: "easeInOut" }}
+        transition={{ duration: 2, ease: "easeInOut" }}
         onAnimationComplete={onAnimationComplete}
       />
     </div>

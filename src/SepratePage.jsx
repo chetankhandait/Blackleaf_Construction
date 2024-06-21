@@ -23,8 +23,8 @@ const SepratePage = () => {
       delay: 100,
     });
   }, []);
-  const phoneNumber = "📞+91 8699285111";
-  const email = "📩cg5031046@gmail.com";
+  const phoneNumber1 = "📞 +91 98156 50378";
+  const phoneNumber2 = "📞 +91 98785 70378";
   const { Id } = useParams();
   console.log(data);
   console.log(Id);
@@ -48,7 +48,7 @@ const SepratePage = () => {
       <div className="overflow-hidden">
         <div className="py-3">
           <div className="flex uppercase font-sans font-semibold justify-around text-black w-full static top-3  z-40 sm:top-6  ">
-            <div className="flex">
+            <div className="flex justify-center items-center gap-2 cursor-pointer">
               <img src="/blackleaf.png" className="w-12" />
               <h2 className="text-[13px]">
                 Blackleaf <br /> Construction
@@ -56,14 +56,15 @@ const SepratePage = () => {
             </div>
             <div className="flex flex-col  text-[13px] gap-2  text-right  sm:flex-row sm:gap-6">
               <h3>
-                <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+                <a href={`tel:${phoneNumber1}`}>{phoneNumber1}</a>
               </h3>
               <h3>
-                <a href={`mailto:${email}`} className="email-link">
-                  {email}
+                <a href={`tel:${phoneNumber2}`} className="email-link">
+                  {phoneNumber2}
                 </a>
               </h3>
             </div>
+            <button className="uppercase btn p-2 rounded-md">Contact Us</button>
           </div>
         </div>
         <motion.div

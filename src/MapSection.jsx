@@ -18,7 +18,10 @@ const MapSection = () => {
           neighborhoods. Blackleaf Properties ensures a high standard of living
           and an excellent investment opportunity in these vibrant cities.
         </p>
+        <a href="https://maps.app.goo.gl/CaAFk7Lpywa1CamNA" target="_blank">
+        
         <button className="uppercase btn">See on the map</button>
+        </a>
       </div>
     </div>
   );

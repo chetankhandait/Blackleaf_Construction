@@ -41,6 +41,7 @@ import {
   FaParking,
    
 } from "react-icons/fa";
+import { FaElevator, FaStairs } from "react-icons/fa6";
 
 // Mapping of icon names to their corresponding React Icon components
 const iconMapping = {
@@ -72,14 +73,14 @@ const iconMapping = {
   FaParking: <FaParking size={30} />,
  
   FaRunning: <FaRunning size={30} />,
-  
+  FaElevator:<FaElevator size={30}/> ,
   FaTrash: <FaTrash size={30} />,
  
   FaUtensils: <FaUtensils size={30} />,
   FaTachometerAlt: <FaTachometerAlt size={30} />,
   FaSpa: <FaSpa size={30} />,
   FaUsers: <FaUsers size={30} />,
- 
+  FaStairs:<FaStairs size={30}/>,
   FaHotTub: <FaHotTub size={30} />,
   FaCoffee: <FaCoffee size={30} />,
  

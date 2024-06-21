@@ -65,27 +65,27 @@
       },
       {
         percentage: "10%",
-        dueDate: "AFTER 6 MONTHS",
+        dueDate: "AFTER 3 MONTHS",
       },
       {
         percentage: "10%",
+        dueDate: "AFTER 6 MONTHS",
+      },
+      {
+        percentage: "15%",
+        dueDate: "AFTER 9 MONTHS",
+      },
+      {
+        percentage: "15%",
         dueDate: "AFTER 12 MONTHS",
       },
       {
         percentage: "15%",
-        dueDate: "AFTER 18 MONTHS",
-      },
-      {
-        percentage: "15%",
-        dueDate: "AFTER 24 MONTHS",
-      },
-      {
-        percentage: "15%",
-        dueDate: "AFTER 30 MONTHS",
+        dueDate: "AFTER 15 MONTHS",
       },
       {
         percentage: "25%",
-        dueDate: "ON HANDOVER",
+        dueDate: "HANDOVER",
       },
     ],
   },
@@ -151,27 +151,27 @@
       },
       {
         percentage: "5%",
-        dueDate: "AFTER 6 MONTHS",
+        dueDate: "AFTER 3 MONTHS",
       },
       {
         percentage: "5%",
+        dueDate: "AFTER 6 MONTHS",
+      },
+      {
+        percentage: "10%",
+        dueDate: "AFTER 9 MONTHS",
+      },
+      {
+        percentage: "10%",
         dueDate: "AFTER 12 MONTHS",
       },
       {
-        percentage: "10%",
-        dueDate: "AFTER 24 MONTHS",
-      },
-      {
-        percentage: "10%",
-        dueDate: "AFTER 30 MONTHS",
+        percentage: "30%",
+        dueDate: "AFTER 15 MONTHS",
       },
       {
         percentage: "30%",
-        dueDate: "AFTER 36 MONTHS",
-      },
-      {
-        percentage: "30%",
-        dueDate: "ON HANDOVER",
+        dueDate: "HANDOVER",
       },
     ],
   },
@@ -257,27 +257,27 @@
       },
       {
         percentage: "5%",
-        dueDate: "AFTER 6 MONTHS",
+        dueDate: "AFTER 3 MONTHS",
       },
       {
         percentage: "5%",
+        dueDate: "AFTER 6 MONTHS",
+      },
+      {
+        percentage: "15%",
+        dueDate: "AFTER 9 MONTHS",
+      },
+      {
+        percentage: "15%",
         dueDate: "AFTER 12 MONTHS",
       },
       {
-        percentage: "15%",
-        dueDate: "AFTER 18 MONTHS",
-      },
-      {
-        percentage: "15%",
-        dueDate: "AFTER 24 MONTHS",
+        percentage: "20%",
+        dueDate: "AFTER 15 MONTHS",
       },
       {
         percentage: "20%",
-        dueDate: "AFTER 30 MONTHS",
-      },
-      {
-        percentage: "20%",
-        dueDate: "ON HANDOVER",
+        dueDate: "HANDOVER",
       },
     ],
   },

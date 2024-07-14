@@ -4,6 +4,7 @@ import Loader from './Loader';
 import 'tailwindcss/tailwind.css';
 import HeroSection from './HeroSection';
 import SepratePage from './SepratePage';
+import SeprateContact from './SeprateContact';
 
 const App = () => {
   const [showHero, setShowHero] = useState(false);
@@ -19,6 +20,7 @@ const App = () => {
           showHero ? <HeroSection /> : <Loader onAnimationComplete={handleAnimationComplete} />
         } />
         <Route path="/seperate/:Id" element={<SepratePage />} />
+        <Route path="/contact" element={<SeprateContact/>}/>
       </Routes>
     </BrowserRouter>
   );

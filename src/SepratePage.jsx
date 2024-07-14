@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import data from "../Data/data";
 import InteriorDesign from "./InteriorDesign";
 import PaymentTerm from "./PaymentTerm";
@@ -50,8 +50,8 @@ const SepratePage = () => {
           <div className="flex uppercase font-sans font-semibold justify-around text-black w-full static top-3  z-40 sm:top-6  ">
             <div className="flex justify-center items-center gap-2 cursor-pointer">
               <img src="/blackleaf.png" className="w-12" />
-              <h2 className="text-[13px]">
-                Blackleaf <br /> Construction
+              <h2 className="text-[13px] hidden sm:block ">
+                Blackleaf <br /> Properties
               </h2>
             </div>
             <div className="flex flex-col  text-[13px] gap-2  text-right  sm:flex-row sm:gap-6">
@@ -64,7 +64,10 @@ const SepratePage = () => {
                 </a>
               </h3>
             </div>
-            <button className="uppercase btn p-2 rounded-md">Contact Us</button>
+            <a href="#contact"   >
+
+            <button className="uppercase btn p-2 rounded-md text-sm">Contact Us</button>
+            </a>
           </div>
         </div>
         <motion.div
@@ -182,7 +185,8 @@ const SepratePage = () => {
             </div>
           </section>
 
-          <div className="w-full  ">
+          <div id="contact" className="w-full  ">
+
             <RegisterYourInterest />
 
             <Newsletter />

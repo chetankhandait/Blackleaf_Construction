@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const phoneNumber1 = "📞 +91 98156 50378";
 const phoneNumber2 = "📞 +91 98785 70378";
 const NavBar = () => {
@@ -7,7 +8,7 @@ const NavBar = () => {
       <div className="flex uppercase items-center  font-sans font-semibold justify-around text-[#fff] w-full fixed top-3  z-40 sm:top-6  ">
         <div className="flex justify-center items-center gap-2 cursor-pointer">
           <img src="/blackleaf.jpeg" className="w-12" />
-          <h2 className="text-[13px]">
+          <h2 className="text-[13px] hidden sm:block">
             Blackleaf <br /> Construction
           </h2>
         </div>
@@ -22,7 +23,11 @@ const NavBar = () => {
             </a>
           </h3>
         </div>
-        <button className="uppercase btn p-2 rounded-md">Contact Us</button>
+        <Link to="/contact">
+
+
+        <button className="uppercase btn p-2 rounded-md text-sm">Contact Us</button>
+        </Link>
       </div>
     </div>
   );

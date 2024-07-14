@@ -85,7 +85,7 @@
       },
       {
         percentage: "25%",
-        dueDate: "HANDOVER",
+        dueDate: "POSSESSION",
       },
     ],
   },
@@ -171,7 +171,7 @@
       },
       {
         percentage: "30%",
-        dueDate: "HANDOVER",
+        dueDate: "POSSESSION",
       },
     ],
   },
@@ -277,7 +277,7 @@
       },
       {
         percentage: "20%",
-        dueDate: "HANDOVER",
+        dueDate: "POSSESSION",
       },
     ],
   },

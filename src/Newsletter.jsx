@@ -45,7 +45,7 @@ const Newsletter = () => {
       <a
         className="text-gray-700 hover:text-orange-600"
         aria-label="Visit Facebook"
-        href="https://www.facebook.com"
+        href="https://wa.me/919815650378"
         target="_blank"
         rel="noopener noreferrer"
       >

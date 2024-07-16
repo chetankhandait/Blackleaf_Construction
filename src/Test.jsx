@@ -93,14 +93,14 @@ const Test = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <Link to={`seperate/${data[currentProjectIndex].name}`}>
+            <Link to={`/${data[currentProjectIndex].name}`}>
               {data[currentProjectIndex].name}
             </Link>
           </h2>
           <h4 className={`mt-4 sm:mt-8 font-sans font-semibold uppercase ${animateTitle ? 'animate-title' : ''}`}>
             By Blackleaf Properties
           </h4>
-          <Link to={`/seperate/${data[currentProjectIndex].name}`} className={`btn mt-4 sm:mt-8 ${animateTitle ? 'animate-title' : ''}`}>
+          <Link to={`/${data[currentProjectIndex].name}`} className={`btn mt-4 sm:mt-8 ${animateTitle ? 'animate-title' : ''}`}>
             Know more
           </Link>
           <h3 className="text-xl sm:text-3xl mt-10 sm:mt-20">

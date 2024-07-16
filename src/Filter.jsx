@@ -87,7 +87,7 @@ const Filter = () => {
                 className="py-2 cursor-pointer transition-transform duration-300" 
                 onClick={() => handleItemClick(1, item)}
               >
-                <Link to={`./seperate/${item}`}>
+                <Link to={`./${item}`}>
                 
                 {item}
                 </Link>

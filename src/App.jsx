@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/" element={
           showHero ? <HeroSection /> : <Loader onAnimationComplete={handleAnimationComplete} />
         } />
-        <Route path="/seperate/:Id" element={<SepratePage />} />
+        <Route path="/:Id" element={<SepratePage />} />
         <Route path="/contact" element={<SeprateContact/>}/>
       </Routes>
     </BrowserRouter>

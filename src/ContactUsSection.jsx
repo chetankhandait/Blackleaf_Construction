@@ -16,10 +16,10 @@ const RegisterYourInterest = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceID = "service_mzaku5x";
-    const templateID = "template_y2mpyhh";
-    const userID = "jlAKqtJ3sfY4wDjW7";
-    const replyTemplateID = "template_sx93jxx"; // Add your reply email template ID
+    const serviceID = "service_kghkv6i";
+    const templateID = "template_1sncwpf";
+    const userID = "HNkkU5UULgYlH6jc9";
+    const replyTemplateID = "template_o71w0uo"; // Add your reply email template ID
 
     const templateParams = {
       name: formData.name,

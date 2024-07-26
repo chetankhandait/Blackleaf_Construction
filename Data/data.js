@@ -1,4 +1,4 @@
- const data = [
+const data = [
   {
     id: "THE ANANTA ASPIRE",
     name: "THE ANANTA ASPIRE",

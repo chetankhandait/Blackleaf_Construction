@@ -28,7 +28,7 @@ const Newsletter = () => {
       <div className="flex flex-col items-center   gap-7">
         <div>
           <p className="font-sans text-base font-semibold  ">
-            719 Imperial tower Cp67, Mohali, India, 160063
+            Blackleaf Properties, Office no 719, Imperial tower Cp67 ,Mohali
           </p>
         </div>
         <div className="flex items-center justify-center gap-10 ">
@@ -39,7 +39,7 @@ const Newsletter = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook className="h-8 w-8" />
+            <FaLinkedin className="h-8 w-8" />
           </a>
           <a
             className="text-gray-700 hover:text-orange-600"
